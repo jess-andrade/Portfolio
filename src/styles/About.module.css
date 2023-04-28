@@ -1,0 +1,12 @@
+.containerAbout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: #462520;
+  border-radius: 10px;
+
+  min-height: 100vh;
+
+}
