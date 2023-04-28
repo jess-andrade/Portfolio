@@ -2,3 +2,9 @@
   display: flex;
   justify-content: center;
 }
+
+.img {
+  position: fixed;
+  max-height: 400px;
+  width: 100%;
+}

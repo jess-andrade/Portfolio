@@ -20,9 +20,9 @@ export default function Layout({ children }: LayoutProps) {
       </Head>
 
       <div className='container-global'>
-
+        <Navbar />
         <main className='main-container'>
-          <Navbar />
+
           {children}
           <About />
         </main>
