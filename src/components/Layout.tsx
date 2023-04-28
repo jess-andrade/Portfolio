@@ -1,11 +1,10 @@
 import Head from 'next/head';
+import { ThemeProvider } from '@mui/material';
 
-
-import Footer from './Footer';
-import SimplePaper from './SimplePaper';
 import Navbar from './Navbar';
-import About from '@/pages/About';
+import About from '../pages/about';
 
+import theme from '@/utils/theme';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -14,20 +13,22 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Head>
-        <link rel="icon" href="" />
-        <title>Jessica's Portifolio</title>
-      </Head>
+      <ThemeProvider theme={theme}>
+        <Head>
+          <link rel="icon" href="" />
+          <title>Jessica's Portifolio</title>
+        </Head>
 
-      <div className='container-global'>
-        <Navbar />
-        <main className='main-container'>
+        <div className='container-global'>
 
-          {children}
-          <About />
-        </main>
+          <main className='main-container'>
+            <Navbar />
+            {children}
+            <About />
+          </main>
 
-      </div>
+        </div>
+      </ThemeProvider>
     </>
   )
 }
