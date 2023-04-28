@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import me from '../../public/me.png'
+import { Button } from '@mui/material'
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
         <p>Front End Dev</p>
 
         <ul>
-          <li className={styles.button}><a href='https://github.com/jess-andrade'>GitHub</a></li>
-          <li className={styles.button}><a href=''>Download CV</a></li>
+          <li className={styles.button}><Button color="primary" href='https://github.com/jess-andrade'>GitHub</Button></li>
+          <li className={styles.button}><Button color="secondary">Download CV</Button></li>
         </ul>
 
       </div >
