@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { ThemeProvider } from '@mui/material';
 
 import Navbar from './Navbar';
-import About from '../pages/about';
 
 import theme from '@/utils/theme';
 
@@ -24,7 +23,6 @@ export default function Layout({ children }: LayoutProps) {
           <main className='main-container'>
             <Navbar />
             {children}
-            <About />
           </main>
 
         </div>

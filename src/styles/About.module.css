@@ -4,9 +4,32 @@
   align-items: center;
   flex-wrap: wrap;
 
-  background-color: #462520;
+  background-color: #48221f;
   border-radius: 10px;
 
   min-height: 100vh;
 
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background-color: #793930;
+  min-width: 60%;
+  min-height: 50vh;
+
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #201b1b;
+
+  margin: 5%;
+}
+
+.textContent {
+  max-width: 600px;
+
+  text-align: justify;
+  margin: 10%;
 }
