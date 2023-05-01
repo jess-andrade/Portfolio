@@ -15,7 +15,6 @@
   justify-content: center;
   align-items: center;
 
-
   background-color: #793930;
   min-width: 60%;
   min-height: 50vh;
@@ -34,7 +33,7 @@
 }
 
 .avatarContainer {
-  margin: 5%
+  margin: 5%;
 }
 
 .avatar {
@@ -48,6 +47,10 @@
 }
 
 @media (max-width: 768px) {
+  .containerAbout {
+    margin-top: 40px;
+  }
+
   .textContainer {
     flex-wrap: wrap;
   }

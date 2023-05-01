@@ -7,7 +7,6 @@
   min-height: 100vh;
 
   flex-direction: column;
-
 }
 
 .homeWrapper {
@@ -18,14 +17,12 @@
 
   margin-top: 10%;
   gap: 100px;
-
 }
 
 .name {
   font-size: 40px;
   font-weight: bold;
   color: #ef94a3;
-
 }
 
 .intro {
@@ -47,7 +44,8 @@
   display: flex;
 }
 
-.button {}
+.button {
+}
 
 /* tech icons */
 
@@ -78,6 +76,9 @@
 }
 
 @media (max-width: 768px) {
+  .homeWrapper {
+    gap: 30px;
+  }
   .container {
     margin-top: 20%;
   }
@@ -102,5 +103,4 @@
     min-height: 0px;
     margin: 0px;
   }
-
 }
