@@ -31,13 +31,15 @@ export default function IconLabelTabs() {
 
   useEventListener(null, 'scroll', () => {
 
-    setValue(Math.floor(window.scrollY/(25.6 * window.screenY)))
+    const value = Math.floor(window.scrollY/(25.6 * window.screenY))
+    if (value < 10) {
+      setValue(Math.floor(window.scrollY/(25.6 * window.screenY)))
+    }
 
   });
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
-    console.log(newValue)
   };
 
   return (
