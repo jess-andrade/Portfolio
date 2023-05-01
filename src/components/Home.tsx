@@ -44,9 +44,9 @@ export default function Home() {
           </div>
 
           <div className={styles.profile}>
-            {/* <Image className={styles.wstar} src={wstar} alt='a little white star' /> */}
+
             <div className={styles.imgLink} onMouseLeave={() => { setRotateImg(0) }} onMouseEnter={() => { setRotateImg(-32) }}><Image className={styles.img} src={me} alt='my photo' style={{ transform: `rotate(${rotateImg}deg)`, transition: 'transform 150ms ease' }} /></div>
-            {/* <Image className={styles.wstar} src={wstar} alt='a little white star' /> */}
+
           </div>
         </div>
 

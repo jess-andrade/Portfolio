@@ -5,6 +5,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
+import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
 import { AppBar } from '@mui/material';
 
 import Image from 'next/image';
@@ -16,6 +17,7 @@ export default function IconLabelTabs() {
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
+    console.log(newValue)
   };
 
   return (
@@ -28,9 +30,9 @@ export default function IconLabelTabs() {
     }}>
       {/* <Image src={star} alt='star' className={styles.star} /> */}
       <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" sx={{ maxWidth: '60vw' }}>
-        <Tab icon={<HomeIcon />} label="Home" href='#home' />
-        <Tab icon={<PersonPinIcon />} label="about me" href='#about' />
-        <Tab icon={<FavoriteIcon />} label="FAVORITES" />
+        <Tab icon={<HomeIcon />} href='#home' />
+        <Tab icon={<PersonPinIcon />} href='#about' />
+        <Tab icon={<CollectionsBookmarkIcon />} href='#projects' />
 
       </Tabs>
     </AppBar>

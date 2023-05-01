@@ -15,7 +15,7 @@ export default function Layout({ children }: LayoutProps) {
       <ThemeProvider theme={theme}>
         <Head>
           <link rel="icon" href="" />
-          <title>Jessica's Portifolio</title>
+          <title>Jessica's Portfolio</title>
         </Head>
 
         <div className='container-global'>

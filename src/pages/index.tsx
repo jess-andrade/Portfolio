@@ -1,6 +1,7 @@
 import About from '@/components/About'
 import Home from '@/components/Home'
 import Layout from '@/components/Layout'
+import Projects from '@/components/Projects'
 import Head from 'next/head'
 
 export default function HomePage() {
@@ -9,6 +10,7 @@ export default function HomePage() {
     <Layout>
       <Home />
       <About />
+      <Projects />
     </Layout>
   )
 }
