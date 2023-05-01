@@ -15,6 +15,26 @@ import styles from '../styles/IconTabs.module.css'
 export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
 
+  const useEventListener = (
+    target: EventTarget | null, 
+    event: string, 
+    listener: EventListenerOrEventListenerObject, 
+    trigger = true
+  ): void => {
+    React.useEffect(() => {
+        const t = target || window
+        t.addEventListener(event, listener);
+        trigger && t.dispatchEvent(new Event(event));
+        return () => t.removeEventListener(event, listener);
+      });
+  };
+
+  useEventListener(null, 'scroll', () => {
+
+    setValue(Math.floor(window.scrollY/(25.6 * window.screenY)))
+
+  });
+
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
     console.log(newValue)
