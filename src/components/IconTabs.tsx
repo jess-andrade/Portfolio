@@ -10,8 +10,6 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import { AppBar } from '@mui/material';
 
 import Image from 'next/image';
-import star from '../../public/star.png'
-import styles from '../styles/IconTabs.module.css'
 
 export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
@@ -31,11 +29,8 @@ export default function IconLabelTabs() {
   };
 
   useEventListener(null, 'scroll', () => {
-    const value = Math.floor(window.scrollY / (25.6 * window.screenY))
-    if (value < 10) {
-      setValue(Math.floor(window.scrollY / (25.6 * window.screenY)))
-    }
-
+    const value = Math.floor(window.scrollY/(0.8 * window.innerHeight))
+    setValue(Math.floor(window.scrollY/(25.6 * window.screenY)))
   });
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
