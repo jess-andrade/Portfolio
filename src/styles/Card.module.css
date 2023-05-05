@@ -1,0 +1,81 @@
+.ContainerPin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: column;
+
+
+  background-color: 'white';
+
+  height: 54vh;
+  min-width: 20vw;
+  max-width: 190px;
+
+  border: 2px solid #201b1b;
+  box-shadow: 10px 5px 5px #201b1b;
+
+  margin: 5%;
+  margin-top: 0;
+}
+
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+
+  width: 95%;
+  height: 95%;
+}
+
+.CardImage {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 50%;
+
+  margin: 6px;
+  border: 1px solid #201b1b;
+}
+
+.banner {
+  width: 99.1%;
+  height: 98%;
+  margin: 1px;
+}
+
+.TextContainer {
+  color: #222;
+  max-width: 200px;
+  text-align: justify;
+}
+
+.linkButton {
+  color: #222;
+}
+
+.pin {
+  max-width: 4vw;
+  max-height: 10vh;
+}
+
+@media (max-width: 768px) {
+  .CardContainer {
+    min-width: 80vw;
+  }
+
+  .pin {
+    margin-bottom: 0;
+    max-width: 11vw;
+    max-height: 8vh;
+  }
+}

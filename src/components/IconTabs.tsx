@@ -6,6 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
 import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import { AppBar } from '@mui/material';
 
 import Image from 'next/image';
@@ -16,24 +17,23 @@ export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
 
   const useEventListener = (
-    target: EventTarget | null, 
-    event: string, 
-    listener: EventListenerOrEventListenerObject, 
+    target: EventTarget | null,
+    event: string,
+    listener: EventListenerOrEventListenerObject,
     trigger = true
   ): void => {
     React.useEffect(() => {
-        const t = target || window
-        t.addEventListener(event, listener);
-        trigger && t.dispatchEvent(new Event(event));
-        return () => t.removeEventListener(event, listener);
-      });
+      const t = target || window
+      t.addEventListener(event, listener);
+      trigger && t.dispatchEvent(new Event(event));
+      return () => t.removeEventListener(event, listener);
+    });
   };
 
   useEventListener(null, 'scroll', () => {
-
-    const value = Math.floor(window.scrollY/(25.6 * window.screenY))
+    const value = Math.floor(window.scrollY / (25.6 * window.screenY))
     if (value < 10) {
-      setValue(Math.floor(window.scrollY/(25.6 * window.screenY)))
+      setValue(Math.floor(window.scrollY / (25.6 * window.screenY)))
     }
 
   });
@@ -45,16 +45,21 @@ export default function IconLabelTabs() {
   return (
     <AppBar style={{
       position: "fixed",
-      backgroundColor: '#fbefc9',
+      backgroundColor: '#8a211d',
       display: 'flex',
       alignItems: 'center',
       borderRadius: '10px'
     }}>
-      {/* <Image src={star} alt='star' className={styles.star} /> */}
-      <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" sx={{ maxWidth: '60vw' }}>
+
+      <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" sx={{ maxWidth: '60vw' }} TabIndicatorProps={{
+        style: {
+          backgroundColor: "white"
+        }
+      }}>
         <Tab icon={<HomeIcon />} href='#home' />
         <Tab icon={<PersonPinIcon />} href='#about' />
         <Tab icon={<CollectionsBookmarkIcon />} href='#projects' />
+        <Tab icon={<AlternateEmailIcon />} href='#contact' />
 
       </Tabs>
     </AppBar>
