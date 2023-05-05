@@ -1,8 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  background-color: #fef2cc;
-  border-radius: 10px;
+  background-color: #8a211d;
 
   min-height: 100vh;
 
@@ -15,20 +14,20 @@
   align-items: center;
   flex-wrap: wrap;
 
-  margin-top: 10%;
-  gap: 100px;
+  margin-top: 8%;
+  gap: 150px;
 }
 
 .name {
   font-size: 40px;
   font-weight: bold;
-  color: #ef94a3;
+  color: #E74646;
 }
 
 .intro {
   max-width: 600px;
   font-size: 20px;
-  color: #492320;
+  color: #222;
 
   flex-shrink: 0;
 }
@@ -38,13 +37,18 @@
   height: 360px;
 }
 
+
 /* buttons */
 
-.ButtonContainer {
+.buttonsContainer {
   display: flex;
+  width: 40px;
+  height: 40px;
 }
 
 .button {
+  width: 40px;
+  height: 40px;
 }
 
 /* tech icons */
@@ -55,7 +59,7 @@
   min-height: 100px;
   gap: 20px;
 
-  margin-top: 30px;
+  margin-top: 10%;
 
   font-size: 20px;
 }
@@ -79,6 +83,7 @@
   .homeWrapper {
     gap: 30px;
   }
+
   .container {
     margin-top: 20%;
   }

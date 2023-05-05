@@ -1,0 +1,26 @@
+.ContactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF3E2;
+  border-radius: 10px;
+  min-height: 100vh;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
