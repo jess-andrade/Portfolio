@@ -5,6 +5,7 @@ import DownButton from './DownButton'
 import pokedex from '../../public/projects/pokedex.png'
 import costs from '../../public/projects/costs2.png'
 import catcinema from '../../public/projects/catcinema.png'
+import wip from '../../public/wip.png'
 
 
 
@@ -14,7 +15,7 @@ export default function Projects() {
     <section id='projects'>
       <div className={styles.projectsContainer}>
         <div className={styles.projectsWrapper}>
-          <h1>Projects</h1>
+          <h1 className={styles.name}>Projects</h1>
 
           <div className={styles.ProjectCards}>
 
@@ -43,28 +44,28 @@ export default function Projects() {
               view='https://cat-cinema.vercel.app/'
             />
             <Card
-              title='Please wait'
-              src={catcinema}
-              alt='- -CatCinema '
-              description='With this app you can search informations about your favorite movies'
-              href='https://github.com/jess-andrade/CatCinema'
-              view='https://cat-cinema.vercel.app/'
+              title='Work in progress...'
+              src={wip}
+              alt='- -wip'
+              description="I'll update soon ♡"
+              href=''
+              view=''
             />
             <Card
-              title='Please wait'
-              src={catcinema}
-              alt='- -CatCinema '
-              description='With this app you can search informations about your favorite movies'
-              href='https://github.com/jess-andrade/CatCinema'
-              view='https://cat-cinema.vercel.app/'
+              title='Work in progress...'
+              src={wip}
+              alt='- -wip '
+              description="I'll update soon ♡"
+              href=''
+              view=''
             />
             <Card
-              title='Please wait'
-              src={catcinema}
-              alt='- -CatCinema '
-              description='With this app you can search informations about your favorite movies'
-              href='https://github.com/jess-andrade/CatCinema'
-              view='https://cat-cinema.vercel.app/'
+              title='Work in progress...'
+              src={wip}
+              alt='- -wip '
+              description="I'll update soon ♡"
+              href=''
+              view=''
             />
 
 

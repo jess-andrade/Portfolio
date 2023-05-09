@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import GitHubIcon from '@mui/icons-material/GitHub';
-import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
-import me from '../../public/me.png'
+import me3 from '../../public/me2.png'
 
 import { Button } from '@mui/material'
 import { useState } from 'react'
@@ -28,7 +27,7 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.intro}>
               <h1 className={styles.title}>Front End Developer</h1>
-              <WriteTitle className={styles.name} fullText='Jessica Andrade ' />
+              <WriteTitle className={styles.name} fullText='Jessica Andrade_' />
 
               <p> insert a cool description here, please
                 insert a cool description here, please
@@ -46,7 +45,7 @@ export default function Home() {
           </div>
 
           <div className={styles.profile}>
-            <div className={styles.imgLink} onMouseLeave={() => { setRotateImg(0) }} onMouseEnter={() => { setRotateImg(-32) }}><Image className={styles.img} src={me} alt='my photo' style={{ transform: `rotate(${rotateImg}deg)`, transition: 'transform 150ms ease' }} /></div>
+            <div className={styles.imgLink} onMouseLeave={() => { setRotateImg(0) }} onMouseEnter={() => { setRotateImg(-32) }}><Image className={styles.img} src={me3} alt='my photo' style={{ transform: `rotate(${rotateImg}deg)`, transition: 'transform 150ms ease' }} /></div>
           </div>
         </div>
 

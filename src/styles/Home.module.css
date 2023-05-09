@@ -1,11 +1,12 @@
 .container {
   display: flex;
   align-items: center;
-  background-color: #8a211d;
+  background-color: #F3EFE0;
 
   min-height: 100vh;
 
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .homeWrapper {
@@ -21,7 +22,7 @@
 .name {
   font-size: 40px;
   font-weight: bold;
-  color: #E74646;
+  color: #8c162a;
 }
 
 .intro {

@@ -1,13 +1,16 @@
 .containerAbout {
+  background-color: #F3EFE0;
+  min-height: 100vh;
+  margin: 26px;
+}
+
+.aboutWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
 
-  background-color: #FFF3E2;
-  border-radius: 10px;
-
-  min-height: 100vh;
 }
 
 .textContainer {
@@ -15,30 +18,35 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #FFE5CA;
+  background-color: #F3EFE0;
   min-width: 60%;
-  min-height: 50vh;
+  min-height: 37vh;
 
   border-radius: 10px;
-  box-shadow: 10px 5px 5px #201b1b;
-
-  margin: 5%;
+  box-shadow: 6px 5px 5px 6px #928c8c;
+  margin: 1%;
+  max-width: 300px;
 }
 
 .textContent {
-  max-width: 75%;
+  max-width: 78%;
   text-align: justify;
-  margin: 10%;
   color: #222;
 }
 
 .avatarContainer {
+  max-width: 305px;
   margin: 5%;
 }
 
 .avatar {
-  width: 300px;
-  height: 300px;
+  width: 290px;
+  height: 290px;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
 }
 
 .downButton {

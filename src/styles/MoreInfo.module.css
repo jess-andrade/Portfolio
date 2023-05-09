@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+
+  max-width: 350px;
+}
+
+.textContainer {
+  position: relative;
+}

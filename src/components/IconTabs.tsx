@@ -29,8 +29,10 @@ export default function IconLabelTabs() {
   };
 
   useEventListener(null, 'scroll', () => {
-    const value = Math.floor(window.scrollY/(0.8 * window.innerHeight))
-    setValue(Math.floor(window.scrollY/(25.6 * window.screenY)))
+    const value = Math.floor(window.scrollY / (0.8 * window.innerHeight))
+    setValue(Math.floor(window.scrollY / (25.6 * window.screenY)))
+    console.log(value)
+    console.log(window.scrollY)
   });
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -40,7 +42,7 @@ export default function IconLabelTabs() {
   return (
     <AppBar style={{
       position: "fixed",
-      backgroundColor: '#8a211d',
+      backgroundColor: '#F3EFE0',
       display: 'flex',
       alignItems: 'center',
       borderRadius: '10px'

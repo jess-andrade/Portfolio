@@ -19,8 +19,9 @@
   min-width: 20vw;
   max-width: 190px;
 
-  border: 2px solid #201b1b;
-  box-shadow: 10px 5px 5px #201b1b;
+  border: 2px solid #d4d8d6;
+  box-shadow: 5px 5px 5px #b4b6ab;
+  border-radius: 10%;
 
   margin: 5%;
   margin-top: 0;
@@ -44,7 +45,7 @@
   height: 50%;
 
   margin: 6px;
-  border: 1px solid #201b1b;
+
 }
 
 .banner {
@@ -60,7 +61,7 @@
 }
 
 .linkButton {
-  color: #222;
+  color: #660022;
 }
 
 .pin {

@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  max-width: 400px;
+  width: 50%;
+  background-color: #F3EFE0;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+
+  border-radius: 10px;
+  box-shadow: 6px 5px 5px 6px #928c8c;
+}
+
+.skillsTitle {
+  font-size: 26px;
+  font-weight: bold;
+}
