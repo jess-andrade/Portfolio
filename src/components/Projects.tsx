@@ -7,6 +7,8 @@ import costs from '../../public/projects/costs2.png'
 import catcinema from '../../public/projects/catcinema.png'
 import wip from '../../public/wip.png'
 
+import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
+
 
 
 export default function Projects() {
@@ -15,8 +17,8 @@ export default function Projects() {
     <section id='projects'>
       <div className={styles.projectsContainer}>
         <div className={styles.projectsWrapper}>
-          <h1 className={styles.name}>Projects</h1>
-
+          <h1 className={styles.name}> <CollectionsBookmarkIcon /> > Some Projects_</h1>
+          <p> Some projects that I made for study purposes </p>
           <div className={styles.ProjectCards}>
 
             <Card
@@ -67,8 +69,6 @@ export default function Projects() {
               href=''
               view=''
             />
-
-
 
           </div>
 

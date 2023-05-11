@@ -10,7 +10,7 @@
 .name {
   font-size: 40px;
   font-weight: bold;
-  color: #8c162a;
+  color: #222;
 }
 
 .projectsWrapper {
@@ -31,12 +31,14 @@
   gap: 20px 50px;
 
   max-width: 1050px;
+  margin-bottom: 8%;
 
 }
 
 .downButton {
   display: flex;
   justify-content: center;
+
 }
 
 @media (max-width: 768px) {

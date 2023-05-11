@@ -1,20 +1,24 @@
 import styles from '../styles/About.module.css'
+
 import { useState } from 'react'
 import Image from 'next/image'
+
 import DownButton from './DownButton'
 import SkillsBar from './SkillsBar'
 import MoreInfo from './MoreInfo'
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 import avatar from '../../public/avatar.png'
 import avatar2 from '../../public/avatar2.png'
 import jess from '../../public/photo.png'
+
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 export default function About() {
 
   const [changeAvatar, setChangeAvatar] = useState(false)
 
   return (
+
     <section id='about'>
       <div className={styles.containerAbout}>
         <div className={styles.aboutWrapper}>

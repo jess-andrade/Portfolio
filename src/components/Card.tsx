@@ -14,13 +14,10 @@ interface CardProps {
   description: string,
   alt: string,
   href: string,
-  view: string,
-  tech1: any,
-  tech2: any,
-  tech3: any
+  view: string
 }
 
-export default function Card({ src, title, description, alt, href, view, tech1, tech2, tech3 }: CardProps) {
+export default function Card({ src, title, description, alt, href, view }: CardProps) {
 
   const [size, setSize] = useState(false)
 

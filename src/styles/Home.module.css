@@ -11,12 +11,12 @@
 
 .homeWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   align-items: center;
   flex-wrap: wrap;
-
-  margin-top: 8%;
-  gap: 150px;
+  gap: 0 266px;
+  margin: 10%;
+  margin-top: 7%;
 }
 
 .name {
@@ -43,36 +43,34 @@
 
 .buttonsContainer {
   display: flex;
-  width: 40px;
-  height: 40px;
+  gap: 10px 30px;
+  margin-top: 8%;
 }
 
 .button {
-  width: 40px;
-  height: 40px;
+  border-radius: 5%;
 }
+
 
 /* tech icons */
 
 .techContainer {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100px;
-  gap: 20px;
-
-  margin-top: 10%;
+  margin-top: 2%;
 
   font-size: 20px;
+}
+
+.techContainer p {
+  margin-top: 0;
+  margin-right: 20px;
 }
 
 .tech {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-}
-
-.techContainer p {
-  margin-top: 0;
 }
 
 .icon {
