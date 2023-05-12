@@ -12,6 +12,7 @@ export default function SkillsBar() {
   const [italian, setItalianStatus] = useState(0)
 
   return (
+
     <div className={styles.container}>
       <p className={styles.skillsTitle}><GTranslateIcon /> > Languages I speak__ </p>
 
@@ -22,7 +23,6 @@ export default function SkillsBar() {
         <LinearProgress variant="determinate" valueBuffer={100} onMouseEnter={() => { setEnglishStatus(56) }} value={english} />
         <p className={styles.title}>Italian </p>
         <LinearProgress variant="determinate" valueBuffer={100} onMouseEnter={() => { setItalianStatus(85) }} value={italian} />
-
 
       </div>
     </div>

@@ -9,6 +9,8 @@
 
   border-radius: 10px;
   box-shadow: 6px 5px 5px 6px #928c8c;
+
+  cursor: pointer;
 }
 
 .skillsTitle {

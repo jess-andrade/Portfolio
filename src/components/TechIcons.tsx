@@ -23,18 +23,18 @@ export default function TechIcons() {
     <div className={styles.techContainer}>
       <p><b>Tech stacks | </b></p>
       <div className={styles.tech}>
-        <Tech imgSrc={html} altText='html-icon' />
-        <Tech imgSrc={css} altText='css-icon' />
-        <Tech imgSrc={js} altText='javascript-icon' />
-        <Tech imgSrc={ts} altText='typescript-icon' />
-        <Tech imgSrc={react} altText='react-icon' />
-        <Tech imgSrc={next} altText='next-icon' />
-        <Tech imgSrc={mui} altText='mui-icon' />
-        <Tech imgSrc={figma} altText='figma-icon' />
-        <Tech imgSrc={express} altText='express-icon' />
-        <Tech imgSrc={node} altText='node-icon' />
-        <Tech imgSrc={mysql} altText='mysql-icon' />
-        <Tech imgSrc={ps} altText='photoshop-icon' />
+        <Tech imgSrc={html} altText='html-icon' animation />
+        <Tech imgSrc={css} altText='css-icon' animation />
+        <Tech imgSrc={js} altText='javascript-icon' animation />
+        <Tech imgSrc={ts} altText='typescript-icon' animation />
+        <Tech imgSrc={react} altText='react-icon' animation />
+        <Tech imgSrc={next} altText='next-icon' animation />
+        <Tech imgSrc={mui} altText='mui-icon' animation />
+        <Tech imgSrc={figma} altText='figma-icon' animation />
+        <Tech imgSrc={express} altText='express-icon' animation />
+        <Tech imgSrc={node} altText='node-icon' animation />
+        <Tech imgSrc={mysql} altText='mysql-icon' animation />
+        <Tech imgSrc={ps} altText='photoshop-icon' animation />
       </div>
     </div >
   )

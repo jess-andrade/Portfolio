@@ -12,9 +12,6 @@
   align-content: space-between;
   flex-direction: column;
 
-
-  background-color: 'white';
-
   height: 54vh;
   min-width: 20vw;
   max-width: 190px;
@@ -34,24 +31,38 @@
   align-items: center;
   align-content: space-around;
 
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 50%;
 }
 
 .CardImage {
   display: flex;
   justify-content: center;
   width: 90%;
-  height: 50%;
+  height: 60%;
 
   margin: 6px;
+}
 
+.title {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.tech {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .banner {
   width: 99.1%;
   height: 98%;
   margin: 1px;
+
+  border-radius: 10px;
 }
 
 .TextContainer {
@@ -61,6 +72,8 @@
 }
 
 .linkButton {
+  border-top: 1px solid #ced1c0;
+  padding-top: 10px;
   color: #660022;
 }
 

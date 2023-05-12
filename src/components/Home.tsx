@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import DownloadIcon from '@mui/icons-material/Download';
 import { Button } from '@mui/material'
 
 import me3 from '../../public/me2.png'
@@ -12,51 +13,74 @@ import me3 from '../../public/me2.png'
 import TechIcons from './TechIcons';
 import DownButton from './DownButton';
 import WriteTitle from './WriteTitle';
-import DownloadIcon from '@mui/icons-material/Download';
+
+import { motion } from "framer-motion"
+
 
 export default function Home() {
 
   const [rotateImg, setRotateImg] = useState(0)
 
   return (
+    <>
+      <section id='home'>
 
-    <section id='home'>
+        <div className={styles.globalContainer}>
+          <div className={styles.container}>
+            <div className={styles.homeWrapper}>
 
-      <div className={styles.container}>
-        <div className={styles.homeWrapper}>
+              <div className={styles.intro}>
 
-          <div className={styles.content}>
-            <div className={styles.intro}>
-              <h1 className={styles.title}>Front End Developer</h1>
-              <WriteTitle className={styles.name} fullText='Jessica Andrade_' />
+                <h1 className={styles.title}>Front End Developer</h1>
+                <WriteTitle className={styles.name} fullText='Jessica Andrade_' />
+                <p>
+                  Hey, welcome to my Portfolio 👾<br /> I'm a software developer living in Milan, Italy
+                </p>
 
-              <p> Hello world, I'm starting my journey as a Front End Developer</p>
+                <div className={styles.buttonsContainer}>
+                  <Button className={styles.button} color="primary" href='https://github.com/jess-andrade' > <GitHubIcon fontSize="medium" />  </Button>
+                  <Button className={styles.button} color="primary" href='https://www.linkedin.com/in/jess-andradec/' > <LinkedInIcon fontSize="medium" />  </Button>
+                  <Button className={styles.buttonCv}> <DownloadIcon fontSize="medium" /> Download CV </Button>
+                </div>
 
-              <div className={styles.buttonsContainer}>
-                <Button className={styles.button} color="primary" href='https://github.com/jess-andrade' > <GitHubIcon fontSize="large" />  </Button>
-                <Button className={styles.button} color="primary" href='https://www.linkedin.com/in/jess-andradec/' > <LinkedInIcon fontSize="large" />  </Button>
-                <Button className={styles.buttonCv}> <DownloadIcon fontSize="large" /> Download CV </Button>
               </div>
 
-            </div >
+              <TechIcons />
+            </div>
+            <motion.div
+              className={styles.profile}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{
+                opacity: 1,
+                scale: 1,
+                rotate: [0, 360]
+              }}
+              transition={{
+                duration: 1.1,
+                delay: 0.2,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              <div
+                className={styles.imgLink}
+                onMouseLeave={() => { setRotateImg(0) }} onMouseEnter={() => { setRotateImg(-32) }}>
+                <Image className={styles.img} src={me3} alt='my photo' style={{ transform: `rotate(${rotateImg}deg)`, transition: 'transform 150ms ease' }} /></div>
+            </motion.div>
+
+
           </div>
 
-          <div className={styles.profile}>
-            <div className={styles.imgLink} onMouseLeave={() => { setRotateImg(0) }} onMouseEnter={() => { setRotateImg(-32) }}><Image className={styles.img} src={me3} alt='my photo' style={{ transform: `rotate(${rotateImg}deg)`, transition: 'transform 150ms ease' }} /></div>
+
+
+
+
+          <div className={styles.downButton}>
+            <DownButton href='#about' />
           </div>
-
-
-          <TechIcons />
-
         </div>
 
+      </section >
+    </>
 
-        <div className={styles.downButton}>
-          <DownButton href='#about' />
-        </div>
-
-      </div>
-
-    </section >
   )
 }

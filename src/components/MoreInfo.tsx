@@ -9,7 +9,7 @@ export default function MoreInfo() {
     <div className={styles.container}>
       <div className={styles.textContainer}>
 
-        <div className={styles.text}><FmdGoodIcon fontSize='small' /> • Italy, Lombardy - Rozzano </div> <br />
+        <div className={styles.text}><FmdGoodIcon fontSize='small' /> • Italy, Lombardy - Milano </div> <br />
         <div className={styles.text}><SchoolIcon fontSize='small' /><b> • Education:</b> Technical Diploma in Informatics</div> <br />
         <div className={styles.text}><WorkIcon fontSize='small' /><b> • Employement:</b> Open <DoneIcon sx={{ color: 'green' }} /></div>
 
