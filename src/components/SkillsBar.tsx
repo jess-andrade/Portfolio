@@ -14,7 +14,7 @@ export default function SkillsBar() {
   return (
 
     <div className={styles.container}>
-      <p className={styles.skillsTitle}><GTranslateIcon /> > Languages I speak__ </p>
+      <p className={styles.skillsTitle}><GTranslateIcon /> &gt; Languages I speak__ </p>
 
       <div className={styles.skillsContainer}>
         <p className={styles.title}>Portuguese </p>
