@@ -11,9 +11,20 @@ export default function SkillsBar() {
   const [english, setEnglishStatus] = useState(0)
   const [italian, setItalianStatus] = useState(0)
 
+  const fillBar = () => {
+    setPortugueseStatus(100)
+    setTimeout(() => {
+      setEnglishStatus(56)
+    }, 200);
+    setTimeout(() => {
+      setItalianStatus(85)
+    }, 400);
+
+  }
+
   return (
 
-    <div className={styles.container}>
+    <div className={styles.container} onMouseEnter={fillBar}>
       <p className={styles.skillsTitle}><GTranslateIcon /> &gt; Languages I speak__ </p>
 
       <div className={styles.skillsContainer}>
