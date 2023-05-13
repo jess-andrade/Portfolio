@@ -28,7 +28,6 @@ export default function Home() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-
   };
 
   return (
@@ -42,7 +41,7 @@ export default function Home() {
               <div className={styles.intro}>
 
                 <h1 className={styles.title}>Front End Developer</h1>
-                <WriteTitle className={styles.name} fullText='Jessica Andrade_' />
+                <WriteTitle className={styles.name} fullText='Jessica Andrade' />
                 <p>
                   Hey, welcome to my Portfolio 👾<br /> I'm a software developer living in Milan, Italy
                 </p>

@@ -46,10 +46,34 @@
   height: 310px;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .name {
   font-size: 40px;
   font-weight: bold;
   color: #8c162a;
+}
+
+.blink_ {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8c162a;
+  animation: blink 0.4s infinite;
+}
+
+.blink2_ {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8c162a;
+  animation: blink 1.2s infinite;
 }
 
 /* buttons */
