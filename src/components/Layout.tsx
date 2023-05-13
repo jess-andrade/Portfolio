@@ -13,10 +13,6 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Head>
-          <link rel="icon" href="" />
-          <title>Jessica's Portfolio</title>
-        </Head>
 
         <div className='container-global'>
 
