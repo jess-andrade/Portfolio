@@ -21,6 +21,16 @@ export default function Home() {
 
   const [rotateImg, setRotateImg] = useState(0)
 
+  const downloadFile = () => {
+    const link = document.createElement("a");
+    link.href = "/cv-jessica-andrade.pdf";
+    link.download = "cv-jessica-andrade.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+  };
+
   return (
     <>
       <section id='home'>
@@ -40,7 +50,7 @@ export default function Home() {
                 <div className={styles.buttonsContainer}>
                   <Button className={styles.button} color="primary" href='https://github.com/jess-andrade' > <GitHubIcon fontSize="medium" />  </Button>
                   <Button className={styles.button} color="primary" href='https://www.linkedin.com/in/jess-andradec/' > <LinkedInIcon fontSize="medium" />  </Button>
-                  <Button className={styles.buttonCv}> <DownloadIcon fontSize="medium" /> Download CV </Button>
+                  <Button className={styles.buttonCv} onClick={downloadFile}> <DownloadIcon fontSize="medium" /> Download CV </Button>
                 </div>
 
               </div>
@@ -64,15 +74,11 @@ export default function Home() {
               <div
                 className={styles.imgLink}
                 onMouseLeave={() => { setRotateImg(0) }} onMouseEnter={() => { setRotateImg(-32) }}>
-                <Image className={styles.img} src={me3} alt='my photo' style={{ transform: `rotate(${rotateImg}deg)`, transition: 'transform 150ms ease' }} /></div>
+                <Image className={styles.img} src={me3} alt='my photo' style={{ transform: `rotate(${rotateImg}deg)`, transition: 'transform 150ms ease' }} priority={false} /></div>
             </motion.div>
 
 
           </div>
-
-
-
-
 
           <div className={styles.downButton}>
             <DownButton href='#about' />

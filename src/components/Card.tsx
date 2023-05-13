@@ -41,7 +41,7 @@ export default function Card({ src, title, description, alt, href, view, techs }
             <div className={styles.TextContainer}>
               <p>{description}</p>
               <div className={styles.tech}>
-                {techs ? techs.map(tech => <Tech imgSrc={tech} altText='' />) : false}
+                {techs ? techs.map((tech, index) => <Tech key={index} imgSrc={tech} altText='' />) : false}
               </div>
             </div>
 

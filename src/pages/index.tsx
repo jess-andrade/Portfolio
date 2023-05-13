@@ -4,7 +4,6 @@ import Footer from '@/components/Footer'
 import Home from '@/components/Home'
 import Layout from '@/components/Layout'
 import Projects from '@/components/Projects'
-import Head from 'next/head'
 
 export default function HomePage() {
 

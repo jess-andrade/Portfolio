@@ -13,14 +13,11 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <ThemeProvider theme={theme}>
-
         <div className='container-global'>
-
           <main className='main-container'>
             <Navbar />
             {children}
           </main>
-
         </div>
       </ThemeProvider>
     </>
