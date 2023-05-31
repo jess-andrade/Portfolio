@@ -1,11 +1,12 @@
 .ContactContainer {
+  background-color: #F1F1F1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F3EFE0;
   border-radius: 10px;
   min-height: 100vh;
-  flex-direction: column;
+
 
   flex-wrap: wrap;
 }
@@ -23,4 +24,13 @@
 .info {
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .ContactContainer .buttonContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10%;
+  }
+
 }

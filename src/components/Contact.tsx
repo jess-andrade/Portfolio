@@ -1,34 +1,78 @@
 import styles from '../styles/Contact.module.css'
+
 import MyButton from './MyButton'
 import CopyButton from './CopyButton'
+
+import { useState } from 'react';
 
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import CallIcon from '@mui/icons-material/Call';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Alert } from '@mui/material';
-import { useState } from 'react';
+import Modal from '@mui/material/Modal';
+import { Typography } from '@mui/material';
+import { Box } from '@mui/material';
+
+const style = {
+  position: 'absolute' as 'absolute',
+  top: '20%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: '#f3efe0',
+  border: 'none',
+  borderRadius: '15px',
+  boxShadow: 24,
+  p: 3,
+  display: 'flex',
+  justifyContent: 'center'
+};
 
 export default function Contact() {
-  const [alert, setAlert] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
+  const [alertText, setAlertText] = useState('');
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-  const alertReader = (textAlert: string) => {
-    setAlert(textAlert);
+  const setAlert = (text: string) => {
+    setAlertText(text);
+    handleOpen();
 
     setTimeout(() => {
-      setAlert(null)
-    }, 2000);
+      handleClose();
+    }, 1000);
   }
+
 
   return (
     <>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        disableAutoFocus
+        disableEnforceFocus
+        disablePortal
+        disableScrollLock
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-description">
+            {alertText} copied to clipboard.
+          </Typography>
+        </Box>
+      </Modal>
+
+
       <section id='contact'>
         <div className={styles.ContactContainer}>
-          {alert ? <Alert severity="info" variant="outlined" style={{ position: 'absolute', marginTop: '-300px' }}>{alert}</Alert> : false}
+
           <div className={styles.buttonContainer}>
 
             <div className={styles.info}>
-              <CopyButton onClickProps={{ text: 'jess.andradec@gmail.com', alertText: 'E-mail', setAlertState: alertReader }}>
+              <CopyButton onClickProps={{ text: 'jess.andradec@gmail.com', alertText: 'E-mail', setAlertState: setAlert }}>
                 <AlternateEmailIcon />
               </CopyButton>
               <div className={styles.infoContainer}>
@@ -48,7 +92,7 @@ export default function Contact() {
             </div>
 
             <div className={styles.info}>
-              <CopyButton onClickProps={{ text: '+39 351 637 1007', alertText: 'Phone number', setAlertState: alertReader }}>
+              <CopyButton onClickProps={{ text: '+39 351 637 1007', alertText: 'Phone number', setAlertState: setAlert }}>
                 <CallIcon />
               </CopyButton>
               <div className={styles.infoContainer}>

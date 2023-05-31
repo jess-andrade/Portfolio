@@ -14,26 +14,26 @@ import Image from 'next/image';
 export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
 
-  const useEventListener = (
-    target: EventTarget | null,
-    event: string,
-    listener: EventListenerOrEventListenerObject,
-    trigger = true
-  ): void => {
-    React.useEffect(() => {
-      const t = target || window
-      t.addEventListener(event, listener);
-      trigger && t.dispatchEvent(new Event(event));
-      return () => t.removeEventListener(event, listener);
-    });
-  };
+  // const useEventListener = (
+  //   target: EventTarget | null,
+  //   event: string,
+  //   listener: EventListenerOrEventListenerObject,
+  //   trigger = true
+  // ): void => {
+  //   React.useEffect(() => {
+  //     const t = target || window
+  //     t.addEventListener(event, listener);
+  //     trigger && t.dispatchEvent(new Event(event));
+  //     return () => t.removeEventListener(event, listener);
+  //   });
+  // };
 
-  useEventListener(null, 'scroll', () => {
-    const value = Math.floor(window.scrollY / (0.8 * window.innerHeight))
-    setValue(Math.floor(window.scrollY / (25.6 * window.screenY)))
-    console.log(value)
-    console.log(window.scrollY)
-  });
+  // useEventListener(null, 'scroll', () => {
+  //   const value = Math.floor(window.scrollY / (0.8 * window.innerHeight))
+  //   setValue(Math.floor(window.scrollY / (25.6 * window.screenY)))
+  //   console.log(value)
+  //   console.log(window.scrollY)
+  // });
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -42,7 +42,7 @@ export default function IconLabelTabs() {
   return (
     <AppBar style={{
       position: "fixed",
-      backgroundColor: '#F3EFE0',
+      backgroundColor: '#F1F1F1',
       display: 'flex',
       alignItems: 'center',
       borderRadius: '10px'

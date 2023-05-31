@@ -11,9 +11,21 @@ export default function SkillsBar() {
   const [english, setEnglishStatus] = useState(0)
   const [italian, setItalianStatus] = useState(0)
 
+  const fillBar = () => {
+    setPortugueseStatus(100)
+    setTimeout(() => {
+      setEnglishStatus(56)
+    }, 200);
+    setTimeout(() => {
+      setItalianStatus(85)
+    }, 400);
+
+  }
+
   return (
-    <div className={styles.container}>
-      <p className={styles.skillsTitle}><GTranslateIcon /> > Languages I speak__ </p>
+
+    <div className={styles.container} onMouseEnter={fillBar}>
+      <p className={styles.skillsTitle}><GTranslateIcon /> &gt; Languages I speak__ </p>
 
       <div className={styles.skillsContainer}>
         <p className={styles.title}>Portuguese </p>
@@ -22,7 +34,6 @@ export default function SkillsBar() {
         <LinearProgress variant="determinate" valueBuffer={100} onMouseEnter={() => { setEnglishStatus(56) }} value={english} />
         <p className={styles.title}>Italian </p>
         <LinearProgress variant="determinate" valueBuffer={100} onMouseEnter={() => { setItalianStatus(85) }} value={italian} />
-
 
       </div>
     </div>
