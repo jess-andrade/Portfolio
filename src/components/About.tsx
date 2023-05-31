@@ -11,14 +11,20 @@ import avatar from "../../public/avatar.png";
 import avatar2 from "../../public/avatar2.png";
 import jess from "../../public/photo.png";
 
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import { Pagination } from '@mui/material'
-import FlagCircleIcon from '@mui/icons-material/FlagCircle';
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import { Pagination } from "@mui/material";
+import FlagCircleIcon from "@mui/icons-material/FlagCircle";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
+import { useLanguageContext } from "@/context/languageContext";
+import texts from "@/content/texts";
 
 export default function About() {
   const [changeAvatar, setChangeAvatar] = useState(false);
+  const { language } = useLanguageContext();
+
+  const contentText = texts[language]["about"];
 
   const [page, setPage] = useState(1);
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
@@ -54,20 +60,32 @@ export default function About() {
 
           <div className={styles.textContainer}>
             <div className={styles.textContent}>
-
-              <div className={styles.page} style={page == 1 ? { display: 'block' } : { display: 'none' }} >
-                <h1><AccountBoxIcon /> &gt; About me__</h1>
-                <p className={styles.text}>I am Brazilian, 24 years old, and have a deep passion for technology since my childhood. This interest
-                  initially sparked through my interest in video games and robotics competitions.  I completed the high school with a technical diploma
-                  in informatics and I went to University to study Computer Engineering but I didn't finish because I had to move to Italy a few months ago</p>
+              <div
+                className={styles.page}
+                style={page == 1 ? { display: "block" } : { display: "none" }}
+              >
+                <h1>
+                  <AccountBoxIcon /> &gt; {contentText["title"]}
+                </h1>
+                <p className={styles.text}>{contentText["aboutMe"]}</p>
               </div>
-              <div className={styles.page2} style={page == 2 ? { display: 'block' } : { display: 'none' }} >
-                <h1><FlagCircleIcon /> &gt; My Goal__</h1>
-                <p className={styles.text}> My main objective is <b>to kickstart my career as a Front End developer</b>. I am fully aware that there is a great deal for
-                  me to learn and numerous skills to acquire. Therefore, I am determined to invest 102% of my effort and dedication to achieve this goal. </p>
+              <div
+                className={styles.page2}
+                style={page == 2 ? { display: "block" } : { display: "none" }}
+              >
+                <h1>
+                  <FlagCircleIcon /> &gt; My Goal__
+                </h1>
+                <p className={styles.text}>
+                  {" "}
+                  My main objective is{" "}
+                  <b>to kickstart my career as a Front End developer</b>. I am
+                  fully aware that there is a great deal for me to learn and
+                  numerous skills to acquire. Therefore, I am determined to
+                  invest 102% of my effort and dedication to achieve this goal.{" "}
+                </p>
               </div>
               <Pagination count={2} color="primary" onChange={handleChange} />
-
             </div>
           </div>
 
@@ -75,7 +93,7 @@ export default function About() {
           <MoreInfo />
 
           <motion.div whileTap={{ scale: 1.3 }}>
-            <Image className={styles.img} src={jess} alt='jessica' />
+            <Image className={styles.img} src={jess} alt="jessica" />
           </motion.div>
         </div>
 
@@ -83,7 +101,6 @@ export default function About() {
           <DownButton href="#projects" />
         </div>
       </div>
-
-    </section >
-  )
+    </section>
+  );
 }
