@@ -6,7 +6,6 @@ import Layout from '@/components/Layout'
 import Projects from '@/components/Projects'
 
 export default function HomePage() {
-
   return (
     <Layout>
       <Home />
@@ -15,5 +14,5 @@ export default function HomePage() {
       <Contact />
       <Footer />
     </Layout>
-  )
+  );
 }

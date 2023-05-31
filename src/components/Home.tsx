@@ -1,14 +1,16 @@
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Home.module.css";
 
-import Image from 'next/image'
-import { useState } from 'react'
+import Image from "next/image";
+import { useState } from "react";
+import { useLanguageContext } from "@/context/languageContext";
+import texts from "@/content/texts";
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DownloadIcon from '@mui/icons-material/Download';
 import { Button } from '@mui/material'
 
-import me3 from '../../public/me2.png'
+import me3 from "../../public/me2.png";
 
 import TechIcons from './TechIcons';
 import DownButton from './DownButton';
@@ -16,10 +18,11 @@ import WriteTitle from './WriteTitle';
 
 import { motion } from "framer-motion"
 
-
 export default function Home() {
+  const [rotateImg, setRotateImg] = useState(0);
+  const { language } = useLanguageContext();
 
-  const [rotateImg, setRotateImg] = useState(0)
+  const contentText = texts[language]["home"];
 
   const downloadFile = () => {
     const link = document.createElement("a");

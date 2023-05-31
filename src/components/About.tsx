@@ -1,15 +1,15 @@
-import styles from '../styles/About.module.css'
+import styles from "../styles/About.module.css";
 
-import { useState } from 'react'
-import Image from 'next/image'
+import { useState } from "react";
+import Image from "next/image";
 
-import DownButton from './DownButton'
-import SkillsBar from './SkillsBar'
-import MoreInfo from './MoreInfo'
+import DownButton from "./DownButton";
+import SkillsBar from "./SkillsBar";
+import MoreInfo from "./MoreInfo";
 
-import avatar from '../../public/avatar.png'
-import avatar2 from '../../public/avatar2.png'
-import jess from '../../public/photo.png'
+import avatar from "../../public/avatar.png";
+import avatar2 from "../../public/avatar2.png";
+import jess from "../../public/photo.png";
 
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { Pagination } from '@mui/material'
@@ -18,8 +18,7 @@ import FlagCircleIcon from '@mui/icons-material/FlagCircle';
 import { motion } from "framer-motion"
 
 export default function About() {
-
-  const [changeAvatar, setChangeAvatar] = useState(false)
+  const [changeAvatar, setChangeAvatar] = useState(false);
 
   const [page, setPage] = useState(1);
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
@@ -27,14 +26,30 @@ export default function About() {
   };
 
   return (
-
-    <section id='about'>
+    <section id="about">
       <div className={styles.containerAbout}>
         <div className={styles.aboutWrapper}>
-
-          <div className={styles.avatarContainer} onMouseLeave={() => { setChangeAvatar(false) }} onMouseEnter={() => { setChangeAvatar(true) }}>
-            <Image className={styles.avatar} src={avatar} alt='avatar' style={changeAvatar ? { display: 'none' } : { display: 'block' }} />
-            <Image className={styles.avatar} src={avatar2} alt='avatar' style={changeAvatar ? { display: 'block' } : { display: 'none' }} />
+          <div
+            className={styles.avatarContainer}
+            onMouseLeave={() => {
+              setChangeAvatar(false);
+            }}
+            onMouseEnter={() => {
+              setChangeAvatar(true);
+            }}
+          >
+            <Image
+              className={styles.avatar}
+              src={avatar}
+              alt="avatar"
+              style={changeAvatar ? { display: "none" } : { display: "block" }}
+            />
+            <Image
+              className={styles.avatar}
+              src={avatar2}
+              alt="avatar"
+              style={changeAvatar ? { display: "block" } : { display: "none" }}
+            />
           </div>
 
           <div className={styles.textContainer}>
@@ -65,9 +80,8 @@ export default function About() {
         </div>
 
         <div className={styles.downButton}>
-          <DownButton href='#projects' />
+          <DownButton href="#projects" />
         </div>
-
       </div>
 
     </section >
