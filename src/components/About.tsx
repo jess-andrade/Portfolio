@@ -65,7 +65,7 @@ export default function About() {
                 style={page == 1 ? { display: "block" } : { display: "none" }}
               >
                 <h1>
-                  <AccountBoxIcon /> &gt; {contentText["title"]}
+                  <AccountBoxIcon /> &gt; {contentText["titleAbout"]}
                 </h1>
                 <p className={styles.text}>{contentText["aboutMe"]}</p>
               </div>
@@ -74,16 +74,12 @@ export default function About() {
                 style={page == 2 ? { display: "block" } : { display: "none" }}
               >
                 <h1>
-                  <FlagCircleIcon /> &gt; My Goal__
+                  <FlagCircleIcon /> &gt; {contentText["titleGoals"]}
                 </h1>
-                <p className={styles.text}>
-                  {" "}
-                  My main objective is{" "}
-                  <b>to kickstart my career as a Front End developer</b>. I am
-                  fully aware that there is a great deal for me to learn and
-                  numerous skills to acquire. Therefore, I am determined to
-                  invest 102% of my effort and dedication to achieve this goal.{" "}
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{ __html: contentText["goals"] }}
+                  className={styles.text}
+                />
               </div>
               <Pagination count={2} color="primary" onChange={handleChange} />
             </div>

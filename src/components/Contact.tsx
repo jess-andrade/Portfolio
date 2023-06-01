@@ -1,39 +1,45 @@
-import styles from '../styles/Contact.module.css'
+import styles from "../styles/Contact.module.css";
 
-import MyButton from './MyButton'
-import CopyButton from './CopyButton'
+import MyButton from "./MyButton";
+import CopyButton from "./CopyButton";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import CallIcon from '@mui/icons-material/Call';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Alert } from '@mui/material';
-import Modal from '@mui/material/Modal';
-import { Typography } from '@mui/material';
-import { Box } from '@mui/material';
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import CallIcon from "@mui/icons-material/Call";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Alert } from "@mui/material";
+import Modal from "@mui/material/Modal";
+import { Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import texts from "@/content/texts";
+import { useLanguageContext } from "@/context/languageContext";
 
 const style = {
-  position: 'absolute' as 'absolute',
-  top: '20%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute" as "absolute",
+  top: "20%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: '#f3efe0',
-  border: 'none',
-  borderRadius: '15px',
+  bgcolor: "#f3efe0",
+  border: "none",
+  borderRadius: "15px",
   boxShadow: 24,
   p: 3,
-  display: 'flex',
-  justifyContent: 'center'
+  display: "flex",
+  justifyContent: "center",
 };
 
 export default function Contact() {
   const [open, setOpen] = useState(false);
-  const [alertText, setAlertText] = useState('');
+  const [alertText, setAlertText] = useState("");
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const { language } = useLanguageContext();
+
+  const contentText = texts[language]["contact"];
 
   const setAlert = (text: string) => {
     setAlertText(text);
@@ -42,12 +48,10 @@ export default function Contact() {
     setTimeout(() => {
       handleClose();
     }, 1000);
-  }
-
+  };
 
   return (
     <>
-
       <Modal
         open={open}
         onClose={handleClose}
@@ -60,19 +64,22 @@ export default function Contact() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-description">
-            {alertText} copied to clipboard.
+            {alertText} {contentText["copiedToClipboard"]}.
           </Typography>
         </Box>
       </Modal>
 
-
-      <section id='contact'>
+      <section id="contact">
         <div className={styles.ContactContainer}>
-
           <div className={styles.buttonContainer}>
-
             <div className={styles.info}>
-              <CopyButton onClickProps={{ text: 'jess.andradec@gmail.com', alertText: 'E-mail', setAlertState: setAlert }}>
+              <CopyButton
+                onClickProps={{
+                  text: "jess.andradec@gmail.com",
+                  alertText: "E-mail",
+                  setAlertState: setAlert,
+                }}
+              >
                 <AlternateEmailIcon />
               </CopyButton>
               <div className={styles.infoContainer}>
@@ -82,7 +89,7 @@ export default function Contact() {
             </div>
 
             <div className={styles.info}>
-              <MyButton href='https://github.com/jess-andrade'>
+              <MyButton href="https://github.com/jess-andrade">
                 <GitHubIcon />
               </MyButton>
               <div className={styles.infoContainer}>
@@ -92,17 +99,23 @@ export default function Contact() {
             </div>
 
             <div className={styles.info}>
-              <CopyButton onClickProps={{ text: '+39 351 637 1007', alertText: 'Phone number', setAlertState: setAlert }}>
+              <CopyButton
+                onClickProps={{
+                  text: "+39 351 637 1007",
+                  alertText: contentText["phoneNumber"],
+                  setAlertState: setAlert,
+                }}
+              >
                 <CallIcon />
               </CopyButton>
               <div className={styles.infoContainer}>
-                <h3>Phone number</h3>
+                <h3>{contentText["phoneNumber"]}</h3>
                 <p>+39 351 637 1007</p>
               </div>
             </div>
 
             <div className={styles.info}>
-              <MyButton href='https://www.linkedin.com/in/jess-andradec/'>
+              <MyButton href="https://www.linkedin.com/in/jess-andradec/">
                 <LinkedInIcon />
               </MyButton>
               <div className={styles.infoContainer}>
@@ -110,10 +123,9 @@ export default function Contact() {
                 <p>jess-andradec</p>
               </div>
             </div>
-
           </div>
         </div>
-      </section >
+      </section>
     </>
-  )
+  );
 }
