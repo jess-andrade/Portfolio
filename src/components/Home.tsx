@@ -18,6 +18,7 @@ import WriteTitle from "./WriteTitle";
 
 import { motion } from "framer-motion";
 import ButtonLanguage from './ButtonLanguage';
+import ColorMode from './ColorMode';
 
 export default function Home() {
   const [rotateImg, setRotateImg] = useState(0);
@@ -40,6 +41,7 @@ export default function Home() {
         <div className={styles.globalContainer}>
 
           <div className={styles.buttons}>
+            <ColorMode />
             <ButtonLanguage />
           </div>
 
