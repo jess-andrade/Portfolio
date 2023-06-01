@@ -8,7 +8,7 @@ import texts from "@/content/texts";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DownloadIcon from "@mui/icons-material/Download";
-import { Button } from "@mui/material";
+import { Button, Select } from "@mui/material";
 
 import me3 from "../../public/me2.png";
 
@@ -17,6 +17,7 @@ import DownButton from "./DownButton";
 import WriteTitle from "./WriteTitle";
 
 import { motion } from "framer-motion";
+import ButtonLanguage from './ButtonLanguage';
 
 export default function Home() {
   const [rotateImg, setRotateImg] = useState(0);
@@ -37,9 +38,15 @@ export default function Home() {
     <>
       <section id="home">
         <div className={styles.globalContainer}>
+
+          <div className={styles.buttons}>
+            <ButtonLanguage />
+          </div>
+
           <div className={styles.container}>
             <div className={styles.homeWrapper}>
               <div className={styles.intro}>
+
                 <h1 className={styles.title}>{contentText["role"]}</h1>
                 <WriteTitle
                   className={styles.name}
@@ -112,6 +119,7 @@ export default function Home() {
                 />
               </div>
             </motion.div>
+
           </div>
 
           <div className={styles.downButton}>

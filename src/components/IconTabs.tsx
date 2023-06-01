@@ -10,6 +10,7 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import { AppBar } from '@mui/material';
 
 import Image from 'next/image';
+import SelectLanguage from './SelectLanguage';
 
 export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
@@ -48,7 +49,7 @@ export default function IconLabelTabs() {
       borderRadius: '10px'
     }}>
 
-      <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" sx={{ maxWidth: '60vw' }} TabIndicatorProps={{
+      <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" sx={{ maxWidth: '150vw' }} TabIndicatorProps={{
         style: {
           backgroundColor: "white"
         }

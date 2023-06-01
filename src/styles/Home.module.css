@@ -120,10 +120,16 @@
   justify-content: center;
 }
 
+.buttons {
+  display: flex;
+  align-self: flex-end;
+}
+
 @media (max-width: 768px) {
 
-  .container {
-    margin-top: 20%;
+  .buttons {
+    margin-top: 15%;
+    align-self: center;
   }
 
   .intro {
@@ -134,7 +140,7 @@
   }
 
   .homeWrapper {
-    margin: 15%;
+    margin: 5%;
   }
 
   .downButton {
