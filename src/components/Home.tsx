@@ -21,9 +21,9 @@ import ButtonLanguage from './ButtonLanguage';
 import ColorMode from './ColorMode';
 
 export default function Home() {
+
   const [rotateImg, setRotateImg] = useState(0);
   const { language } = useLanguageContext();
-
   const contentText = texts[language]["home"];
 
   const downloadFile = () => {
@@ -41,7 +41,7 @@ export default function Home() {
         <div className={styles.globalContainer}>
 
           <div className={styles.buttons}>
-            <ColorMode />
+            <ColorMode disabled />
             <ButtonLanguage />
           </div>
 

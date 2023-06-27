@@ -8,7 +8,11 @@ import { useColorModeContext } from '@/context/colorModeContext';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
-export default function ColorMode() {
+type ColorModeProps = {
+  disabled: boolean,
+}
+
+export default function ColorMode({ disabled }: ColorModeProps) {
 
   const theme = useTheme();
   const { mode, setMode } = useColorModeContext();
@@ -29,7 +33,7 @@ export default function ColorMode() {
         borderRadius: 1,
       }}
     >
-      <IconButton sx={{ ml: 1 }} onClick={toggleColorMode} color="inherit">
+      <IconButton sx={{ ml: 1 }} onClick={toggleColorMode} color="inherit" disabled>
         {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
       </IconButton>
     </Box>
