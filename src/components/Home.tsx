@@ -18,7 +18,7 @@ import WriteTitle from "./WriteTitle";
 
 import { motion } from "framer-motion";
 import ButtonLanguage from './ButtonLanguage';
-import ColorMode from './ColorMode';
+// import ColorMode from './ColorMode';
 
 export default function Home() {
 
@@ -41,7 +41,7 @@ export default function Home() {
         <div className={styles.globalContainer}>
 
           <div className={styles.buttons}>
-            <ColorMode disabled />
+            {/* <ColorMode disabled /> */}
             <ButtonLanguage />
           </div>
 
