@@ -20,7 +20,7 @@ export default function SkillsBar() {
       setEnglishStatus(56);
     }, 200);
     setTimeout(() => {
-      setItalianStatus(85);
+      setItalianStatus(90);
     }, 400);
   };
 

@@ -22,7 +22,7 @@ export default function ButtonLanguage() {
       <ButtonGroup variant="text" aria-label="text button group">
         <Button onClick={() => setLanguage('en-US')} disabled={language == 'en-US'}>en</Button>
         <Button onClick={() => setLanguage('pt-BR')} disabled={language == 'pt-BR'}>pt</Button>
-        <Button>it</Button>
+        <Button onClick={() => setLanguage('it-IT')} disabled={language == 'it-IT'}>it</Button>
       </ButtonGroup>
 
     </Box>

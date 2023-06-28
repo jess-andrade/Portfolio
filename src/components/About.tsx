@@ -9,7 +9,7 @@ import MoreInfo from "./MoreInfo";
 
 import avatar from "../../public/avatar.png";
 import avatar2 from "../../public/avatar2.png";
-import jess from "../../public/photo.png";
+import Jessica from "../../public/Jessica.png";
 
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import { Pagination } from "@mui/material";
@@ -89,7 +89,7 @@ export default function About() {
           <MoreInfo />
 
           <motion.div whileTap={{ scale: 1.3 }}>
-            <Image className={styles.img} src={jess} alt="jessica" />
+            <Image className={styles.img} src={Jessica} alt="Jessica" />
           </motion.div>
         </div>
 
