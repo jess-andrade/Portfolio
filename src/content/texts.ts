@@ -108,12 +108,12 @@ const texts: any = {
     home: {
       role: "Sviluppatrice Front End",
       littleDescription:
-        "Ciao, benvenuto al mio Portfolio 👾<br /> Sono una sviluppatrice di software che vive a Salvador, Bahia (Brasile)",
+        "Ciao, benvenuti al mio Portfolio 👾<br /> Sono una sviluppatrice di software che vive a Salvador, Bahia (Brasile)",
     },
     about: {
       titleAbout: "Informazioni su di me__",
       aboutMe:
-        `Sono una brasiliana di ${calculaIdade('22/12/1998')} anni e ho una profonda passione per la tecnologia fin da quando ero bambina. Ho iniziato ad interessarmi e appassionarmi grazie ai videogiochi e alle competizioni di robotica. Ho terminato il liceo con un diploma tecnico in informatica e attualmente sto studiando Ingegneria Informatica presso alla Federal University of Bahia (UFBA).`,
+        `Sono una ragazza brasiliana di ${calculaIdade('22/12/1998')} anni e ho una profonda passione per la tecnologia fin da quando ero bambina. Ho iniziato ad interessarmi e appassionarmi grazie ai videogiochi e alle competizioni di robotica. Ho terminato il liceo con un diploma tecnico in informatica e attualmente sto studiando Ingegneria Informatica presso la <i>Federal University of Bahia (Brasile)</i>.`,
       titleGoals: "Il mio obiettivo__",
       goals:
         "Il mio obiettivo principale è <b>avviare la mia carriera come sviluppatrice Front End</b>. Sono pienamente consapevole che ho molto da imparare e numerose competenze da acquisire. Pertanto, sono determinata a investire il 102% del mio impegno e dedizione per ",
