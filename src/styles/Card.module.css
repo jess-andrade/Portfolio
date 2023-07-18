@@ -12,7 +12,7 @@
   align-content: space-between;
   flex-direction: column;
 
-  height: 54vh;
+  height: 64vh;
   min-width: 20vw;
   max-width: 190px;
 
@@ -69,6 +69,7 @@
   color: #222;
   max-width: 200px;
   text-align: justify;
+  font-size: 12px;
 }
 
 .linkButton {

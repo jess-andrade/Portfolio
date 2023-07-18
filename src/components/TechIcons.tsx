@@ -13,6 +13,7 @@ import node from '../../public/icons/node.png'
 import mysql from '../../public/icons/mysql.png'
 import ps from '../../public/icons/ps.png'
 import tailwind from '../../public/icons/tailwind.png'
+import wp from '../../public/icons/wp.png'
 
 import Tech from './Tech'
 
@@ -30,9 +31,10 @@ export default function TechIcons() {
         <Tech imgSrc={ts} altText='typescript-icon' animation />
         <Tech imgSrc={react} altText='react-icon' animation />
         <Tech imgSrc={next} altText='next-icon' animation />
+        <Tech imgSrc={wp} altText='wp-icon' animation />
         <Tech imgSrc={mui} altText='mui-icon' animation />
         <Tech imgSrc={tailwind} altText='tailwind-icon' animation />
-        <Tech imgSrc={express} altText='express-icon' animation />
+        {/* <Tech imgSrc={express} altText='express-icon' animation /> */}
         <Tech imgSrc={node} altText='node-icon' animation />
         <Tech imgSrc={mysql} altText='mysql-icon' animation />
         <Tech imgSrc={ps} altText='photoshop-icon' animation />

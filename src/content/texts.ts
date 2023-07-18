@@ -47,12 +47,16 @@ const texts: any = {
     },
     projects: {
       titleProjects: "Some Projects_",
+      dreamlandDescription:
+        "Mobile application developed in React Native with features aimed at helping parents to make their children sleep. - coming soon to the PlayStore",
+      hermesDescription:
+        "Hermes is an algorithm that uses machine learning techniques to classify figures of speech in tweets. - university project",
       pokedexDescription:
-        "I made this Pokedex using Next.js and PokeAPI ~ for the Drawer and Cards I used MUI",
+        "I made this Pokedex using Next.js and PokeAPI ~ for the Drawer and Cards I used MUI - created for study purposes",
       costsDescription:
-        "With this application you can manage the costs of your project",
+        "With this application you can manage the costs of your project - created for study purposes - I haven't created the backend yet",
       catcinemaDescription:
-        "With this app you can search informations about your favorite movies",
+        "With this app you can search informations about your favorite movies - created for study purposes",
       workInProgressTitle: "Work in progress...",
       workInProgressDescription: "I'll update soon ♡",
       code: "Code",
@@ -88,12 +92,16 @@ const texts: any = {
     },
     projects: {
       titleProjects: "Alguns Projetos_",
+      dreamlandDescription:
+        "Aplicativo mobile desenvolvido com React Native com funcionalidades para ajudar os pais a fazerem seus filhos pequenos dormirem. - em breve na PlaySore",
+      hermesDescription:
+        "Hermes é um algoritmo que usa técnicas de machine learning para classificar figuras de linguagem em tweets - projeto universitário",
       pokedexDescription:
-        "Eu fiz essa Pokedex usando Next.js e PokeAPI ~ para a barra lateral e cards, usei a biblioteca MUI",
+        "Eu fiz essa Pokedex usando Next.js e PokeAPI ~ para a barra lateral e cards, usei a biblioteca MUI - criado para fins de estudo",
       costsDescription:
-        "Com esse app, você pode administrar os custos do seu projeto",
+        "Com esse app, você pode administrar os custos do seu projeto - criado para fins de estudo - não criei o backend ainda",
       catcinemaDescription:
-        "Com esse app, você pode procurar informações sobre seus filmes favoritos",
+        "Com esse app, você pode procurar informações sobre seus filmes favoritos - criado para fins de estudos",
       workInProgressTitle: "Em progresso...",
       workInProgressDescription: "Atualizarei em breve ♡",
       code: "Código",
@@ -129,12 +137,16 @@ const texts: any = {
     },
     projects: {
       titleProjects: "Alcuni Progetti_",
+      dreamlandDescription:
+        "App mobile sviluppata con React Native con funzionalità per aiutare i genitori a far addormentare i loro piccoli. - in arrivo su PlaySore",
+      hermesDescription:
+        "Hermes è un algoritmo che utilizza machine learning per classificare i modi di esprimersi nei tweet - progetto universitario",
       pokedexDescription:
-        "Ho creato questo Pokedex usando Next.js e PokeAPI ~ per la sidebar e le card, ho usato la libreria MUI",
+        "Ho creato questo Pokedex usando Next.js e PokeAPI ~ per la sidebar e le card, ho usato la libreria MUI - creato per motivi di studio",
       costsDescription:
-        "Con questa app puoi gestire i costi dei tuoi progetti",
+        "Con questa app puoi gestire i costi dei tuoi progetti - creato per motivi di studio - Non ho ancora creato il backend",
       catcinemaDescription:
-        "Con questa app puoi cercare informazioni sui tuoi film preferiti",
+        "Con questa app puoi cercare informazioni sui tuoi film preferiti - creato per motivi di studio",
       workInProgressTitle: "Loading...",
       workInProgressDescription: "Aggiornerò presto ♡",
       code: "Codice",

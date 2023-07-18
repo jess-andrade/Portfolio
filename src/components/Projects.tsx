@@ -7,6 +7,8 @@ import pokedex from "../../public/projects/pokedex.png";
 import costs from "../../public/projects/costs2.png";
 import catcinema from "../../public/projects/catcinema.png";
 import wip from "../../public/wip.png";
+import hermes from "../../public/hermes.png";
+import dreamland from "../../public/dreamland.png";
 
 import html from "../../public/icons/html.png";
 import css from "../../public/icons/css-3.png";
@@ -20,6 +22,7 @@ import express from "../../public/icons/express.png";
 import node from "../../public/icons/node.png";
 import mysql from "../../public/icons/mysql.png";
 import ps from "../../public/icons/ps.png";
+import tailwind from "../../public/icons/tailwind.png";
 
 import { motion } from "framer-motion";
 
@@ -42,6 +45,41 @@ export default function Projects() {
           </h1>
 
           <div className={styles.ProjectCards}>
+
+            <motion.div
+              className={styles.box}
+              whileHover={{ scale: [null, 1.0, 1.1] }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card
+                title="Histórias para dormir"
+                src={dreamland}
+                alt="- -dreamland"
+                description={contentText["dreamlandDescription"]}
+                href=""
+                view=""
+                techs={[react, ts, tailwind]}
+                viewDisabled
+              />
+            </motion.div>
+
+            <motion.div
+              className={styles.box}
+              whileHover={{ scale: [null, 1.0, 1.1] }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card
+                title="Hermes"
+                src={hermes}
+                alt="- -hermes"
+                description={contentText["hermesDescription"]}
+                href="https://github.com/jess-andrade/Hermes"
+                view="https://hermes-omega.vercel.app/"
+                techs={[next, mui, ts, tailwind]}
+                viewDisabled
+              />
+            </motion.div>
+
             <motion.div
               className={styles.box}
               whileHover={{ scale: [null, 1.0, 1.1] }}
@@ -71,6 +109,7 @@ export default function Projects() {
                 href="https://github.com/jess-andrade/costs"
                 view="https://costs-self.vercel.app/"
                 techs={[react, node]}
+                viewDisabled
               />
             </motion.div>
 
@@ -105,35 +144,6 @@ export default function Projects() {
               />
             </motion.div>
 
-            <motion.div
-              className={styles.box}
-              whileHover={{ scale: [null, 1.0, 1.1] }}
-              transition={{ duration: 0.3 }}
-            >
-              <Card
-                title={contentText["workInProgressTitle"]}
-                src={wip}
-                alt="- -wip"
-                description={contentText["workInProgressDescription"]}
-                href=""
-                view=""
-              />
-            </motion.div>
-
-            <motion.div
-              className={styles.box}
-              whileHover={{ scale: [null, 1.0, 1.1] }}
-              transition={{ duration: 0.3 }}
-            >
-              <Card
-                title={contentText["workInProgressTitle"]}
-                src={wip}
-                alt="- -wip"
-                description={contentText["workInProgressDescription"]}
-                href=""
-                view=""
-              />
-            </motion.div>
           </div>
         </div>
       </div>

@@ -20,6 +20,7 @@ interface CardProps {
   href: string;
   view: string;
   techs?: any[];
+  viewDisabled?: boolean,
 }
 
 export default function Card({
@@ -30,6 +31,7 @@ export default function Card({
   href,
   view,
   techs,
+  viewDisabled,
 }: CardProps) {
   const { language } = useLanguageContext();
 
@@ -57,8 +59,8 @@ export default function Card({
               <div className={styles.tech}>
                 {techs
                   ? techs.map((tech, index) => (
-                      <Tech key={index} imgSrc={tech} altText="" />
-                    ))
+                    <Tech key={index} imgSrc={tech} altText="" />
+                  ))
                   : false}
               </div>
             </div>
@@ -68,7 +70,7 @@ export default function Card({
                 <CodeIcon />
                 {contentText["code"]}
               </Button>
-              <Button size="small" href={view} className={styles.linkButton}>
+              <Button size="small" href={view} className={styles.linkButton} disabled={viewDisabled}>
                 <RemoveRedEyeIcon />
                 {contentText["viewProject"]}
               </Button>
