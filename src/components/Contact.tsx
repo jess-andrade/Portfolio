@@ -9,6 +9,7 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import CallIcon from "@mui/icons-material/Call";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Alert } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { Typography } from "@mui/material";
@@ -101,16 +102,16 @@ export default function Contact() {
             <div className={styles.info}>
               <CopyButton
                 onClickProps={{
-                  text: "+39 351 637 1007",
+                  text: "+55 71 9273-2641",
                   alertText: contentText["phoneNumber"],
                   setAlertState: setAlert,
                 }}
               >
-                <CallIcon />
+                <WhatsAppIcon />
               </CopyButton>
               <div className={styles.infoContainer}>
                 <h3>{contentText["phoneNumber"]}</h3>
-                <p>+39 351 637 1007</p>
+                <p>+55 71 9273-2641</p>
               </div>
             </div>
 
