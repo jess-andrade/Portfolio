@@ -56,8 +56,8 @@ export default function Projects() {
                 src={dreamland}
                 alt="- -dreamland"
                 description={contentText["dreamlandDescription"]}
-                href=""
-                view=""
+                href="https://github.com/jess-andrade/dreamland"
+                view="https://play.google.com/store/apps/details?id=com.torabox.app"
                 techs={[react, ts, tailwind]}
                 viewDisabled
               />
