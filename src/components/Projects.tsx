@@ -59,7 +59,6 @@ export default function Projects() {
                 href="https://github.com/jess-andrade/dreamland"
                 view="https://play.google.com/store/apps/details?id=com.torabox.app"
                 techs={[react, ts, tailwind]}
-                viewDisabled
               />
             </motion.div>
 
