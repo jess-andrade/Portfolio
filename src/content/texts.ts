@@ -48,7 +48,7 @@ const texts: any = {
     projects: {
       titleProjects: "Some Projects_",
       dreamlandDescription:
-        "Mobile application developed in React Native with features aimed at helping parents to make their children sleep. - coming soon to the PlayStore",
+        "Mobile application developed in React Native with features aimed at helping parents to make their children sleep. - available on PlayStore.",
       hermesDescription:
         "Hermes is an algorithm that uses machine learning techniques to classify figures of speech in tweets. - university project",
       pokedexDescription:
@@ -93,7 +93,7 @@ const texts: any = {
     projects: {
       titleProjects: "Alguns Projetos_",
       dreamlandDescription:
-        "Aplicativo mobile desenvolvido com React Native com funcionalidades para ajudar os pais a fazerem seus filhos pequenos dormirem. - em breve na PlaySore",
+        "Aplicativo mobile desenvolvido com React Native com funcionalidades para ajudar os pais a fazerem seus filhos pequenos dormirem. - disponivel na PlayStore.",
       hermesDescription:
         "Hermes é um algoritmo que usa técnicas de machine learning para classificar figuras de linguagem em tweets - projeto universitário",
       pokedexDescription:
@@ -138,7 +138,7 @@ const texts: any = {
     projects: {
       titleProjects: "Alcuni Progetti_",
       dreamlandDescription:
-        "App mobile sviluppata con React Native con funzionalità per aiutare i genitori a far addormentare i loro piccoli. - in arrivo su PlaySore",
+        "App mobile sviluppata con React Native con funzionalità per aiutare i genitori a far addormentare i loro piccoli. - disponibile su PlayStore.",
       hermesDescription:
         "Hermes è un algoritmo che utilizza machine learning per classificare i modi di esprimersi nei tweet - progetto universitario",
       pokedexDescription:
