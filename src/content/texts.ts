@@ -34,7 +34,7 @@ const texts: any = {
         `I am ${calculaIdade('22/12/1998')}-years-old Brazilian and have a deep passion for technology since my childhood. This interest initially sparked through my interest in video games and robotics competitions. I finished high school with a technical diploma in informatics and I am currently studying Computer Engineering at the Federal University of Bahia (UFBA).`,
       titleGoals: "My Goal__",
       goals:
-        "My main objective is <b> to kickstart my career as a Front End developer</b>. I am fully aware that there is a great deal for me to learn and numerous skills to acquire. Therefore, I am determined to invest 102% of my effort and dedication to achieve this goal.",
+        "I am looking for an opportunity to improve my skills as a Front End developer. I am willing to put in my utmost effort to learn and grow professionally, as I am fully aware that there is much to learn and countless skills to acquire. Therefore, I am determined to invest 102% of my effort and dedication to achieve this goal.",
       languagesTitle: "Languages I speak__",
       portuguese: "Portuguese",
       english: "English",
@@ -79,7 +79,7 @@ const texts: any = {
         `Tenho ${calculaIdade('22/12/1998')} anos de idade e tenho uma paixão profunda por tecnologia desde a minha infância. Esse interesse começou por meio do meu envolvimento com jogos e competições de robótica. Eu conclui o ensino médio técnico com diploma em informática (IFBA) e atualmente estou cursando Engenharia de Computação na Universidade Federal da Bahia (UFBA).`,
       titleGoals: "Meu objetivo__",
       goals:
-        "Meu principal objetivo é <b> iniciar minha carreira como Desenvolvedora Front End</b>. Estou plenamente consciente de que há muito a aprender e inúmeras habilidades a adquirir. Por isso, estou determinada a investir 102% do meu esforço e dedicação para alcançar esse objetivo.",
+        "Estou em busca  de uma oportunidade para  aprimorar minhas habilidades como desenvolvedora Front End. Estou disposta a dar meu maximo empenho para aprender e crescer profissionalmente pois sou plenamente consciente de que há muito a aprender e inúmeras habilidades a adquirir. Por isso, estou determinada a investir 102% do meu esforço e dedicação para alcançar esse objetivo.",
       languagesTitle: "Meus idiomas__",
       portuguese: "Português",
       english: "Inglês",
@@ -124,7 +124,7 @@ const texts: any = {
         `Sono una ragazza brasiliana di ${calculaIdade('22/12/1998')} anni e ho una profonda passione per la tecnologia fin da quando ero bambina. Ho iniziato ad interessarmi e appassionarmi grazie ai videogiochi e alle competizioni di robotica. Ho terminato il liceo con un diploma tecnico in informatica e attualmente sto studiando Ingegneria Informatica presso la <i>Federal University of Bahia (Brasile)</i>.`,
       titleGoals: "Il mio obiettivo__",
       goals:
-        "Il mio obiettivo principale è <b>avviare la mia carriera come sviluppatrice Front End</b>. Sono pienamente consapevole che ho molto da imparare e numerose competenze da acquisire. Pertanto, sono determinata a investire il 102% del mio impegno e dedizione per ",
+        "Sto cercando un'opportunità per migliorare le mie abilità come sviluppatrice Front End. Sono disposta a impegnarmi al massimo per imparare e crescere professionalmente, poiché sono pienamente consapevole che c'è molto da imparare e innumerevoli competenze da acquisire. Pertanto, sono determinata a investire il 102% del mio impegno e dedizione per raggiungere questo obiettivo.",
       languagesTitle: "Lingue che parlo__",
       portuguese: "Portoghese",
       english: "Inglese",
