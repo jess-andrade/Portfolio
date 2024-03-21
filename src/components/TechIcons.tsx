@@ -9,6 +9,7 @@ import next from '../../public/icons/next.png'
 import mui from '../../public/icons/logo.png'
 import figma from '../../public/icons/figma.png'
 import express from '../../public/icons/express.png'
+import kotlin from '../../public/icons/kotlin.png'
 import node from '../../public/icons/node.png'
 import mysql from '../../public/icons/mysql.png'
 import ps from '../../public/icons/ps.png'
@@ -34,6 +35,7 @@ export default function TechIcons() {
         <Tech imgSrc={wp} altText='wp-icon' animation />
         <Tech imgSrc={mui} altText='mui-icon' animation />
         <Tech imgSrc={tailwind} altText='tailwind-icon' animation />
+        <Tech imgSrc={kotlin} altText='kotlin-icon' animation />
         {/* <Tech imgSrc={express} altText='express-icon' animation /> */}
         <Tech imgSrc={node} altText='node-icon' animation />
         <Tech imgSrc={mysql} altText='mysql-icon' animation />

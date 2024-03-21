@@ -9,11 +9,10 @@ import MoreInfo from "./MoreInfo";
 
 import avatar from "../../public/avatar.png";
 import avatar2 from "../../public/avatar2.png";
-import jess from "../../public/jessphoto.png";
+import jess from "../../public/jessphoto2.png";
 
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import { Pagination } from "@mui/material";
-import FlagCircleIcon from "@mui/icons-material/FlagCircle";
+import Face3Icon from '@mui/icons-material/Face3'; import { Pagination } from "@mui/material";
+import FlagIcon from '@mui/icons-material/Flag';
 
 import { motion } from "framer-motion";
 
@@ -65,7 +64,7 @@ export default function About() {
                 style={page == 1 ? { display: "block" } : { display: "none" }}
               >
                 <h1>
-                  <AccountBoxIcon /> &gt; {contentText["titleAbout"]}
+                  <Face3Icon color="primary" fontSize="medium" /> &gt; {contentText["titleAbout"]}
                 </h1>
                 <p className={styles.text}>{contentText["aboutMe"]}</p>
               </div>
@@ -74,7 +73,7 @@ export default function About() {
                 style={page == 2 ? { display: "block" } : { display: "none" }}
               >
                 <h1>
-                  <FlagCircleIcon /> &gt; {contentText["titleGoals"]}
+                  <FlagIcon color="primary" fontSize="medium" /> &gt; {contentText["titleGoals"]}
                 </h1>
                 <p
                   dangerouslySetInnerHTML={{ __html: contentText["goals"] }}

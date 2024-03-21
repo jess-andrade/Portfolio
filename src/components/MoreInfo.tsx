@@ -16,19 +16,19 @@ export default function MoreInfo() {
       <div className={styles.textContainer}>
 
         <div className={styles.text}>
-          <SchoolIcon fontSize="small" />
+          <SchoolIcon fontSize="small" color="primary" />
           <b> • {contentText["educationTitle"]}: </b>
           <p dangerouslySetInnerHTML={{ __html: contentText["education"] }}></p>
         </div>{" "}
         <br />
 
         <div className={styles.text}>
-          <FmdGoodIcon fontSize="small" /> <b>•</b> {contentText["location"]}{" "}
+          <FmdGoodIcon fontSize="small" color="primary" /> <b>•</b> {contentText["location"]}{" "}
         </div>{" "}
         <br />
 
         <div className={styles.text}>
-          <WorkIcon fontSize="small" />
+          <WorkIcon fontSize="small" color="primary" />
           <b> • {contentText["employmentTitle"]}:</b>{" "}
           {contentText["employment"]} <DoneIcon sx={{ color: "green" }} />
         </div>

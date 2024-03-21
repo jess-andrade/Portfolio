@@ -43,15 +43,15 @@ export default function IconLabelTabs() {
   return (
     <AppBar style={{
       position: "fixed",
-      backgroundColor: '#F1F1F1',
       display: 'flex',
       alignItems: 'center',
-      borderRadius: '10px'
+      borderRadius: '10px',
+      backgroundColor: '#f9ccd7'
     }}>
 
       <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" sx={{ maxWidth: '150vw' }} TabIndicatorProps={{
         style: {
-          backgroundColor: "white"
+          backgroundColor: "secondary"
         }
       }}>
         <Tab icon={<HomeIcon />} href='#home' />

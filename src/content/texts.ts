@@ -24,7 +24,7 @@ function calculaIdade(dataNasc: any) {
 const texts: any = {
   "en-US": {
     home: {
-      role: "Front End Developer",
+      role: "Front End and Mobile Dev",
       littleDescription:
         "Hey, welcome to my Portfolio 👾<br /> I'm a software developer living in Salvador, Brazil",
     },
@@ -34,11 +34,12 @@ const texts: any = {
         `I am ${calculaIdade('22/12/1998')}-years-old Brazilian and have a deep passion for technology since my childhood. This interest initially sparked through my interest in video games and robotics competitions. I finished high school with a technical diploma in informatics and I am currently studying Computer Engineering at the Federal University of Bahia (UFBA).`,
       titleGoals: "My Goal__",
       goals:
-        "I am looking for an opportunity to improve my skills as a Front End developer. I am willing to put in my utmost effort to learn and grow professionally, as I am fully aware that there is much to learn and countless skills to acquire. Therefore, I am determined to invest 102% of my effort and dedication to achieve this goal.",
+        "I strive every day to be a qualified and versatile Front-End and Mobile developer, capable of creating intuitive and high-performance user interfaces on different platforms. I am passionate about staying up-to-date on new technologies and features to optimize development processes. So I can contribute to the development of quality web and mobile applications, providing an exceptional user experience.",
       languagesTitle: "Languages I speak__",
       portuguese: "Portuguese",
       english: "English",
       italian: "Italian",
+      spanish: "Spanish",
       location: "Brazil, Bahia - Salvador",
       educationTitle: "Education",
       education: `• Computer Engineering Student -  UFBA  <br/> • Technical Diploma in Informatics -  IFBA `,
@@ -47,6 +48,8 @@ const texts: any = {
     },
     projects: {
       titleProjects: "Some Projects_",
+      kuromiDescription:
+        "Mobile app developed in React Native, a classic Minesweeper game featuring Sanrio characters.",
       dreamlandDescription:
         "Mobile application developed in React Native with features aimed at helping parents to make their children sleep. - available on PlayStore.",
       hermesDescription:
@@ -69,7 +72,7 @@ const texts: any = {
   },
   "pt-BR": {
     home: {
-      role: "Desenvolvedora Front End",
+      role: "Front End e Mobile Dev",
       littleDescription:
         "Olá, bem-vindo(a) ao meu Portfólio 👾<br /> Eu sou uma desenvolvedora de software morando em Salvador, Bahia",
     },
@@ -79,11 +82,12 @@ const texts: any = {
         `Tenho ${calculaIdade('22/12/1998')} anos de idade e tenho uma paixão profunda por tecnologia desde a minha infância. Esse interesse começou por meio do meu envolvimento com jogos e competições de robótica. Eu conclui o ensino médio técnico com diploma em informática (IFBA) e atualmente estou cursando Engenharia de Computação na Universidade Federal da Bahia (UFBA).`,
       titleGoals: "Meu objetivo__",
       goals:
-        "Estou em busca  de uma oportunidade para  aprimorar minhas habilidades como desenvolvedora Front End. Estou disposta a dar meu maximo empenho para aprender e crescer profissionalmente pois sou plenamente consciente de que há muito a aprender e inúmeras habilidades a adquirir. Por isso, estou determinada a investir 102% do meu esforço e dedicação para alcançar esse objetivo.",
+        "Busco todos os dias ser uma desenvolvedora Front-End e Mobile qualificada e versátil, capaz de criar interfaces de usuário intuitivas e de alto desempenho em diferentes plataformas. Gosto de me manter atualizada sobre novas tecnologias e recursos para otimizar processos de desenvolvimento. Com isso, posso contribuir para o desenvolvimento de aplicações web e mobile de qualidade, proporcionando uma experiência excepcional aos usuários.",
       languagesTitle: "Meus idiomas__",
       portuguese: "Português",
       english: "Inglês",
       italian: "Italiano",
+      spanish: "Espanhol",
       location: "Salvador, Bahia - Brasil",
       educationTitle: "Formação",
       education: "• Estudante de Engenharia de Computação (UFBA) <br/> • Diploma Técnico em Informática (IFBA)",
@@ -92,6 +96,8 @@ const texts: any = {
     },
     projects: {
       titleProjects: "Alguns Projetos_",
+      kuromiDescription:
+        "Aplicativo mobile desenvolvido em react native, um classico campo minado com personagens da sanrio",
       dreamlandDescription:
         "Aplicativo mobile desenvolvido com React Native com funcionalidades para ajudar os pais a fazerem seus filhos pequenos dormirem. - disponivel na PlayStore.",
       hermesDescription:
@@ -114,7 +120,7 @@ const texts: any = {
   },
   "it-IT": {
     home: {
-      role: "Sviluppatrice Front End",
+      role: "Front End e Mobile Dev",
       littleDescription:
         "Ciao, benvenuti al mio Portfolio 👾<br /> Sono una sviluppatrice di software che vive a Salvador, Bahia (Brasile)",
     },
@@ -124,11 +130,12 @@ const texts: any = {
         `Sono una ragazza brasiliana di ${calculaIdade('22/12/1998')} anni e ho una profonda passione per la tecnologia fin da quando ero bambina. Ho iniziato ad interessarmi e appassionarmi grazie ai videogiochi e alle competizioni di robotica. Ho terminato il liceo con un diploma tecnico in informatica e attualmente sto studiando Ingegneria Informatica presso la <i>Federal University of Bahia (Brasile)</i>.`,
       titleGoals: "Il mio obiettivo__",
       goals:
-        "Sto cercando un'opportunità per migliorare le mie abilità come sviluppatrice Front End. Sono disposta a impegnarmi al massimo per imparare e crescere professionalmente, poiché sono pienamente consapevole che c'è molto da imparare e innumerevoli competenze da acquisire. Pertanto, sono determinata a investire il 102% del mio impegno e dedizione per raggiungere questo obiettivo.",
+        "Mi sforzo ogni giorno per essere una sviluppatrice Front-End e Mobile qualificata e versatile, in grado di creare interfacce utente intuitive e ad alte prestazioni su diverse piattaforme. Mi piace rimanere aggiornata sulle nuove tecnologie e funzionalità per ottimizzare i processi di sviluppo. In questo modo, posso contribuire allo sviluppo di applicazioni web e mobile di qualità, offrendo un'esperienza eccezionale agli utenti.",
       languagesTitle: "Lingue che parlo__",
       portuguese: "Portoghese",
       english: "Inglese",
       italian: "Italiano",
+      spanish: "Spagnolo",
       location: "Salvador, Bahia - Brasile",
       educationTitle: "Formazione scolastica:",
       education: "• Studente di Ingegneria Informatica - UFBA <br/> • Diploma tecnico in Informatica - IFBA",
@@ -137,6 +144,8 @@ const texts: any = {
     },
     projects: {
       titleProjects: "Alcuni Progetti_",
+      kuromiDescription:
+        "Applicazione mobile sviluppata con React Native, un classico gioco del campo minato con personaggi di Sanrio",
       dreamlandDescription:
         "App mobile sviluppata con React Native con funzionalità per aiutare i genitori a far addormentare i loro piccoli. - disponibile su PlayStore.",
       hermesDescription:

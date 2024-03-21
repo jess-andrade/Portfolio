@@ -11,6 +11,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import { Button, Select } from "@mui/material";
 
 import me3 from "../../public/me2.png";
+import arrow from "../../public/arrow2.png";
 
 import TechIcons from "./TechIcons";
 import DownButton from "./DownButton";

@@ -59,20 +59,20 @@
 .name {
   font-size: 40px;
   font-weight: bold;
-  color: #8c162a;
+  color: #f52e6f;
 }
 
 .blink_ {
   font-size: 40px;
   font-weight: bold;
-  color: #8c162a;
+  color: #f52e6f;
   animation: blink 0.4s infinite;
 }
 
 .blink2_ {
   font-size: 40px;
   font-weight: bold;
-  color: #8c162a;
+  color: #f52e6f;
   animation: blink 1.2s infinite;
 }
 
@@ -95,7 +95,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  max-width: 500px;
+  max-width: 540px;
 }
 
 .techContainer p {
@@ -124,6 +124,7 @@
   display: flex;
   align-self: flex-end;
 }
+
 
 @media (max-width: 768px) {
 

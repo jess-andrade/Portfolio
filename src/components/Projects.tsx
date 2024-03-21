@@ -9,6 +9,7 @@ import catcinema from "../../public/projects/catcinema.png";
 import wip from "../../public/wip.png";
 import hermes from "../../public/hermes.png";
 import dreamland from "../../public/dreamland.png";
+import kuromi from "../../public/projects/Fancy.png"
 
 import html from "../../public/icons/html.png";
 import css from "../../public/icons/css-3.png";
@@ -45,6 +46,22 @@ export default function Projects() {
           </h1>
 
           <div className={styles.ProjectCards}>
+            <motion.div
+              className={styles.box}
+              whileHover={{ scale: [null, 1.0, 1.1] }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card
+                title="Kuromi's Minesweeper"
+                src={kuromi}
+                alt="- -kuromi"
+                description={contentText["kuromiDescription"]}
+                href="https://github.com/jess-andrade/Mines"
+                view=""
+                techs={[react, js]}
+                viewDisabled
+              />
+            </motion.div>
 
             <motion.div
               className={styles.box}
@@ -125,21 +142,6 @@ export default function Projects() {
                 href="https://github.com/jess-andrade/CatCinema"
                 view="https://cat-cinema.vercel.app/"
                 techs={[react, node]}
-              />
-            </motion.div>
-
-            <motion.div
-              className={styles.box}
-              whileHover={{ scale: [null, 1.0, 1.1] }}
-              transition={{ duration: 0.3 }}
-            >
-              <Card
-                title={contentText["workInProgressTitle"]}
-                src={wip}
-                alt="- -wip"
-                description={contentText["workInProgressDescription"]}
-                href=""
-                view=""
               />
             </motion.div>
 
