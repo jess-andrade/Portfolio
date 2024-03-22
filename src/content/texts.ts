@@ -56,8 +56,8 @@ const texts: any = {
         "Hermes is an algorithm that uses machine learning techniques to classify figures of speech in tweets. - university project",
       pokedexDescription:
         "I made this Pokedex using Next.js and PokeAPI ~ for the Drawer and Cards I used MUI - created for study purposes",
-      costsDescription:
-        "With this application you can manage the costs of your project - created for study purposes - I haven't created the backend yet",
+      portfolioDescription:
+        "I developed this portfolio using Next.js and Typescript, with the purpose of introducing myself and also showcasing some of my Front End development skills.",
       catcinemaDescription:
         "With this app you can search informations about your favorite movies - created for study purposes",
       workInProgressTitle: "Work in progress...",
@@ -104,8 +104,8 @@ const texts: any = {
         "Hermes é um algoritmo que usa técnicas de machine learning para classificar figuras de linguagem em tweets - projeto universitário",
       pokedexDescription:
         "Eu fiz essa Pokedex usando Next.js e PokeAPI ~ para a barra lateral e cards, usei a biblioteca MUI - criado para fins de estudo",
-      costsDescription:
-        "Com esse app, você pode administrar os custos do seu projeto - criado para fins de estudo - não criei o backend ainda",
+      portfolioDescription:
+        "Desenvolvi esse portfolio utilizando Next.js e Typescript, com a finalidade de me apresentar e também exibir algumas das minhas habilidades com Front End dev",
       catcinemaDescription:
         "Com esse app, você pode procurar informações sobre seus filmes favoritos - criado para fins de estudos",
       workInProgressTitle: "Em progresso...",
@@ -152,8 +152,8 @@ const texts: any = {
         "Hermes è un algoritmo che utilizza machine learning per classificare i modi di esprimersi nei tweet - progetto universitario",
       pokedexDescription:
         "Ho creato questo Pokedex usando Next.js e PokeAPI ~ per la sidebar e le card, ho usato la libreria MUI - creato per motivi di studio",
-      costsDescription:
-        "Con questa app puoi gestire i costi dei tuoi progetti - creato per motivi di studio - Non ho ancora creato il backend",
+      portfolioDescription:
+        "Ho sviluppato questo portfolio utilizzando Next.js e Typescript, con lo scopo di presentarmi e mostrare anche alcune delle mie competenze nello sviluppo Front End.",
       catcinemaDescription:
         "Con questa app puoi cercare informazioni sui tuoi film preferiti - creato per motivi di studio",
       workInProgressTitle: "Loading...",

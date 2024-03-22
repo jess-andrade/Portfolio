@@ -10,7 +10,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DownloadIcon from "@mui/icons-material/Download";
 import { Button, Select } from "@mui/material";
 
-import me3 from "../../public/me2.png";
+import me3 from "../../public/profilepic2.png";
 import arrow from "../../public/arrow2.png";
 
 import TechIcons from "./TechIcons";

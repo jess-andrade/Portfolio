@@ -4,7 +4,7 @@ import Card from "./Card";
 import DownButton from "./DownButton";
 
 import pokedex from "../../public/projects/pokedex.png";
-import costs from "../../public/projects/costs2.png";
+import portfolio from "../../public/projects/portfolio.png";
 import catcinema from "../../public/projects/catcinema.png";
 import wip from "../../public/wip.png";
 import hermes from "../../public/hermes.png";
@@ -46,6 +46,23 @@ export default function Projects() {
           </h1>
 
           <div className={styles.ProjectCards}>
+
+            <motion.div
+              className={styles.box}
+              whileHover={{ scale: [null, 1.0, 1.1] }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card
+                title="This Portfolio 🩷"
+                src={portfolio}
+                alt="- -portfolio "
+                description={contentText["portfolioDescription"]}
+                href="https://github.com/jess-andrade/Portfolio"
+                view="https://www.jess-andrade.com/"
+                techs={[next, ts]}
+              />
+            </motion.div>
+
             <motion.div
               className={styles.box}
               whileHover={{ scale: [null, 1.0, 1.1] }}
@@ -109,23 +126,6 @@ export default function Projects() {
                 href="https://github.com/jess-andrade/Pokedex"
                 view="https://pokedex-jade-rho.vercel.app/"
                 techs={[next, mui]}
-              />
-            </motion.div>
-
-            <motion.div
-              className={styles.box}
-              whileHover={{ scale: [null, 1.0, 1.1] }}
-              transition={{ duration: 0.3 }}
-            >
-              <Card
-                title="Costs"
-                src={costs}
-                alt="- -costs "
-                description={contentText["costsDescription"]}
-                href="https://github.com/jess-andrade/costs"
-                view="https://costs-self.vercel.app/"
-                techs={[react, node]}
-                viewDisabled
               />
             </motion.div>
 
