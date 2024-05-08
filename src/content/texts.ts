@@ -58,8 +58,8 @@ const texts: any = {
         "I made this Pokedex using Next.js and PokeAPI ~ for the Drawer and Cards I used MUI - created for study purposes",
       portfolioDescription:
         "I developed this portfolio using Next.js and Typescript, with the purpose of introducing myself and also showcasing some of my Front End development skills.",
-      catcinemaDescription:
-        "With this app you can search informations about your favorite movies - created for study purposes",
+      toraboxDescription:
+        "Landing page for ToraBox",
       workInProgressTitle: "Work in progress...",
       workInProgressDescription: "I'll update soon ♡",
       code: "Code",
@@ -106,8 +106,8 @@ const texts: any = {
         "Eu fiz essa Pokedex usando Next.js e PokeAPI ~ para a barra lateral e cards, usei a biblioteca MUI - criado para fins de estudo",
       portfolioDescription:
         "Desenvolvi esse portfolio utilizando Next.js e Typescript, com a finalidade de me apresentar e também exibir algumas das minhas habilidades com Front End dev",
-      catcinemaDescription:
-        "Com esse app, você pode procurar informações sobre seus filmes favoritos - criado para fins de estudos",
+      toraboxDescription:
+        "Landing page para a ToraBox",
       workInProgressTitle: "Em progresso...",
       workInProgressDescription: "Atualizarei em breve ♡",
       code: "Código",
@@ -154,8 +154,8 @@ const texts: any = {
         "Ho creato questo Pokedex usando Next.js e PokeAPI ~ per la sidebar e le card, ho usato la libreria MUI - creato per motivi di studio",
       portfolioDescription:
         "Ho sviluppato questo portfolio utilizzando Next.js e Typescript, con lo scopo di presentarmi e mostrare anche alcune delle mie competenze nello sviluppo Front End.",
-      catcinemaDescription:
-        "Con questa app puoi cercare informazioni sui tuoi film preferiti - creato per motivi di studio",
+      toraboxDescription:
+        "Landing page per la ToraBox",
       workInProgressTitle: "Loading...",
       workInProgressDescription: "Aggiornerò presto ♡",
       code: "Codice",

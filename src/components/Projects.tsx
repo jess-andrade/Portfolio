@@ -10,6 +10,7 @@ import wip from "../../public/wip.png";
 import hermes from "../../public/hermes.png";
 import dreamland from "../../public/dreamland.png";
 import kuromi from "../../public/projects/Fancy.png"
+import torabox from "../../public/projects/torabox.png"
 
 import html from "../../public/icons/html.png";
 import css from "../../public/icons/css-3.png";
@@ -59,6 +60,22 @@ export default function Projects() {
                 description={contentText["portfolioDescription"]}
                 href="https://github.com/jess-andrade/Portfolio"
                 view="https://www.jess-andrade.com/"
+                techs={[next, ts]}
+              />
+            </motion.div>
+
+            <motion.div
+              className={styles.box}
+              whileHover={{ scale: [null, 1.0, 1.1] }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card
+                title="ToraBox"
+                src={torabox}
+                alt="- -CatCinema "
+                description={contentText["toraboxDescription"]}
+                href="https://github.com/jess-andrade/torabox"
+                view="https://torabox.vercel.app/"
                 techs={[next, ts]}
               />
             </motion.div>
@@ -129,21 +146,7 @@ export default function Projects() {
               />
             </motion.div>
 
-            <motion.div
-              className={styles.box}
-              whileHover={{ scale: [null, 1.0, 1.1] }}
-              transition={{ duration: 0.3 }}
-            >
-              <Card
-                title="CatCinema"
-                src={catcinema}
-                alt="- -CatCinema "
-                description={contentText["catcinemaDescription"]}
-                href="https://github.com/jess-andrade/CatCinema"
-                view="https://cat-cinema.vercel.app/"
-                techs={[react, node]}
-              />
-            </motion.div>
+
 
           </div>
         </div>
